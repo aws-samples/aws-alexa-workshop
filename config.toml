@@ -1,0 +1,45 @@
+baseURL = "http://alexaworkshop.com/"
+ignoreFiles = [ "\\.files/README.md$",  ]
+languageCode = "en-us"
+defaultContentLanguage = "en"
+title = "AWS & Alexa Workshop"
+theme = "hugo-theme-learn"
+uglyurls = false
+sectionPagesMenu = "main"
+relativeURLs = true
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[params]
+editURL = "https://github.com/joeshi/aws-alexa-workshop/edit/master/content/"
+themeVariant = "mine"
+showVisitedLinks = false
+author = "Joe SHI"
+description = "AWS & Alexa Workshop"
+disableSearch = false
+disableAssetsBusting = false
+disableLanguageSwitchingButton = true
+disableShortcutsTitle = true
+branch = "master"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsStyle = "tango"
+
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-github'></i> GitHub Project"
+url = "https://github.com/joeshi/aws-alexa-workshop"
+weight = 30
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-envelope'></i> Have questions?"
+url = "https://github.com/JoeShi/aws-alexa-workshop/issues"
+weight = 40
+
+
+
+[outputs]
+home = [ "HTML", "JSON"]
+page = [ "HTML" ]
