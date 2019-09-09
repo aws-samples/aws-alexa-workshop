@@ -1,7 +1,7 @@
 ---
 title: "Prerequisites"
 date: 2019-09-05T23:06:51+08:00
-draft: true
+draft: false
 chapter: false
 weight: 10
 ---
@@ -23,8 +23,9 @@ to create an account for free.
     - If you can not download the Alexa APP, you can use [AWS Device Farm](https://aws.amazon.com/device-farm/) as 
     an alternative.
 
-1. Use **N.Virginia(us-east-1)** AWS Region for this lab
+1. Use **N.Virginia(us-east-1)** AWS Region for this lab.
 
+1. [GitHub](https://github.com/) account.
 
 
 ## AWS Knowledge

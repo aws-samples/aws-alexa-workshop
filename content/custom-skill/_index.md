@@ -1,13 +1,13 @@
 ---
 title: "Lab: Alexa Custom Skill"
 chapter: false
-draft: true
+draft: false
 weight: 15
 ---
 
 {{% notice info %}}
 Use **N.Virginia(us-east-1)** region for this lab, the CloudFormation template used resources in us-east-1.
-Choosing other regions is ok if you skip [Bring Lex Bot to Web](/custom-skill/5.bring-lex-to-web/).
+Choosing other regions is ok if you skip [Bring Lex Bot to Web]({{< ref "6.bring-lex-to-web.md" >}}).
 {{% /notice %}}
 
 {{% notice note %}}
