@@ -15,17 +15,17 @@ You need a valid credit card to set up your account.
 to create an account for free.
 
 1. **Alexa APP**. Please download Alexa APP using App Store or Google Play. 
-    - For iPhone users, you won't be able to find the APP if you are using Chinese App store account. Do use 
+    - **For iPhone users**, you won't be able to find the APP if you are using Chinese App store account. Do use 
     global accounts.
-    - For Google Play users, you will need VPN to download the APP and change country setting to anything except 
+    - **For Google Play users**, you will need VPN to download the APP and change country setting to anything except 
     China and disable GPS. If the country setting and GPS location is still China, you will meet 
     timeout error whenever you open the APP. 
-    - If you can not download the Alexa APP, you can use [AWS Device Farm](https://aws.amazon.com/device-farm/) as 
-    an alternative.
+    - If you can not download the Alexa APP due to network or account issues, you can use **[AWS Device Farm](https://aws.amazon.com/device-farm/)** as 
+    an alternative plan and could still proceed with the lab.
 
 1. Use **N.Virginia(us-east-1)** AWS Region for this lab.
 
-1. [GitHub](https://github.com/) account.
+1. Register a [GitHub](https://github.com/) account.
 
 
 ## AWS Knowledge

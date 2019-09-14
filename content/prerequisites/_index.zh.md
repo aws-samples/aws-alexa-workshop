@@ -6,7 +6,7 @@ chapter: false
 weight: 10
 ---
 
-## 前提脚尖
+## 前提条件
 
 1. **AWS global region 账户**. 注册账号 [open an AWS account](https://aws.amazon.com). 
 您需要一张信用卡来完成注册。
