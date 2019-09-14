@@ -7,7 +7,7 @@ weight: 20
 ---
 
 {{% notice info %}}
-For the first time rung this lab, please select **N.Virginia region (us-east-1)**.
+For the first time running this lab, please select **N.Virginia region (us-east-1)**.
 {{% /notice %}}
     
 In this lab, you will learn how to build a virtual Alexa-Enabled
