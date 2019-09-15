@@ -28,7 +28,7 @@ weight: 10
 
 您最好拥有如下 AWS 知识来确保 Workshop 的顺利完成。但这并不是必要条件。
 
-| STARS | SIGNIFICANCE                                                 |
+| 星星 | 熟悉程度                                                 |
 | ----- | ------------------------------------------------------------ |
 | 0     | No knowledge.                                                |
 | 1     | Just starting to explore this Service. |
