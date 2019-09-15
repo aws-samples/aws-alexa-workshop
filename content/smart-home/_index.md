@@ -11,9 +11,9 @@ For the first time running this lab, please select **N.Virginia region (us-east-
 {{% /notice %}}
 
 {{% notice info %}}
-本使用使用 Cloud9 开发环境，请确保您已经完成
-<a href="/zh/getting-started/create-cloud9-env/" target="_blank">创建 Cloud 9 工作环境</a>. 这个链接会打开一个新的 tab, 请在完成
-创建后回到当前页面。
+You will need to Cloud9 environment for this lab. Make sure you have finished 
+<a href="/getting-started/create-cloud9-env/" target="_blank">Create a Cloud9 Environment</a>. This link will 
+open a new tab, please do remember to return to current page.
 {{% /notice %}}
     
 In this lab, you will learn how to build a virtual Alexa-Enabled
