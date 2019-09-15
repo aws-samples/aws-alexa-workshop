@@ -7,6 +7,7 @@ weight: 10
 ---
 
 ##	Prerequisites
+This chapter prepares all the prerequisites for the hands-on labs.
 
 1. **AWS global region Account**. Please [open an AWS account](https://aws.amazon.com). 
 You need a valid credit card to set up your account. 
@@ -27,6 +28,7 @@ to create an account for free.
 
 1. Register a [GitHub](https://github.com/) account.
 
+1. (Optional) If you have an echo device, please check [Set Up Your Echo](https://www.amazon.com/gp/help/customer/display.html?nodeId=202189140) to test the skill via you echo.
 
 ## AWS Knowledge
 
@@ -44,15 +46,15 @@ It is better to have the following AWS knowledge to continue the workshop. Howev
 
 * [AWS Cloud9](https://aws.amazon.com/cloud9/) <i class="fas fa-star"></i>
 
-* [AWS Amplify Console](https://aws.amazon.com/amplify/console/)
+* [Amazon Lex](https://aws.amazon.com/lex/)
 
 * [AWS Lambda](https://aws.amazon.com/lambda/) <i class="fas fa-star"></i>
+
+* [AWS Amplify Console](https://aws.amazon.com/amplify/console/)
 
 * [Amazon Cognito User Pools](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html). <i class="fas fa-star"></i>
 
 * [AWS AppSync](https://aws.amazon.com/appsync/)
-
-* [Amazon Lex](https://aws.amazon.com/lex/)
 
 * [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) <i class="fas fa-star"></i>
 

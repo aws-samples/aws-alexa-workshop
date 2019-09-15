@@ -1,43 +1,23 @@
 ---
-title: "Lab: Alexa Custom Skill"
+title: "Lab 1: Alexa Custom Skill"
 chapter: false
 draft: false
 weight: 15
 ---
 
-{{% notice info %}}
-Use **N.Virginia(us-east-1)** region for this lab, the CloudFormation template used resources in us-east-1.
-Choosing other regions is ok if you skip [Bring Lex Bot to Web]({{< ref "6.bring-lex-to-web.md" >}}).
-{{% /notice %}}
+In this lab, we will get your through the steps of how to **build a custom Alexa skill** , a banking skill that could provide account balance and loan information.
 
-{{% notice note %}}
-The code for this lab is located at [here](https://github.com/lab798/aws-alexa-workshop-ask), 
-please download the code to start this lab.
-{{% /notice %}}
-
-
-## Architect
+## Architecture
 
 ![](/images/ask/architecutre.png)
 
-##	Overview
-
-In general, the lab covers two parts. The first part is to about Lex, **step 1-6 is to demo the usage of Lex together with other services like lambda function, cognito etc. Step 7-10 is the hands on lab on Alexa**. The reason why we introduces these two services together is they are highly relative. Amazon Lex uses the same deep learning technologies that power Amazon Alexa and we could export Lex settings directly to enable Alexa skills.
-
-**Amazon Lex**
-
-Amazon Lex is a service for building conversational interfaces into any application using voice and text. Amazon Lex provides the advanced deep learning functionalities of automatic speech recognition (ASR) for converting speech to text, and natural language understanding (NLU) to recognize the intent of the text, to enable you to build applications with highly engaging user experiences and lifelike conversational interactions. With Amazon Lex, the same deep learning technologies that power Amazon Alexa are now available to any developer, enabling you to quickly and easily build sophisticated, natural language, conversational bots (“chatbots”). This lab is designed to demonstrate how to create a new bot including defining intents and slots. This lab will walk you through the following:
-
-*	Creating a Lex bot
-*	Adding intents
-*	Adding slot types
-*	Using Lambda as the back-end logic for Lex
-
-## Steps
-
-{{% notice info %}}
-Step 1 and step 2's function is the same, the only difference is whether to create the intents manually or not. 
-Choose your preferred one is ok. But if you are interested, you could experience both steps and compare the difference.
+{{% notice tip %}}
+You could find all the codes for this lab [here](https://github.com/lab798/aws-alexa-workshop-ask).
 {{% /notice %}}
 
-{{% children showhidden="false" %}}
+## Table of Contents
+
+The lab contains two parts. The first part (Step 1- 5) is to about [Amazon Lex](https://aws.amazon.com/lex/) development. And the second part (Step 6 - 8) focuses on Alexa hands on. 
+The reason why we introduces these two services together is they are highly relative. Amazon **Lex uses the same deep learning technologies that power Amazon Alexa** and we could easily export Lex settings directly to enable Alexa skills.
+But it doesn't mean that we have to use Lex to develop Alexa. You could also directly develop in Alexa Development Console. 
+{{% children %}}

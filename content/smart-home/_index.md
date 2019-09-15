@@ -1,5 +1,5 @@
 ---
-title: "Lab: Smart Home Skill"
+title: "Lab 2: Smart Home Skill"
 date: 2019-09-05T23:06:51+08:00
 draft: false
 chapter: true
