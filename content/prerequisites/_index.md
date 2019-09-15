@@ -30,6 +30,8 @@ to create an account for free.
 
 ## AWS Knowledge
 
+It is better to have the following AWS knowledge to continue the workshop. However, it is not a requirement.
+
 | STARS | SIGNIFICANCE                                                 |
 | ----- | ------------------------------------------------------------ |
 | 0     | No knowledge.                                                |
