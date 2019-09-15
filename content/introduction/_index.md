@@ -7,7 +7,7 @@ draft: false
 
 ![](/images/AMAZON-ALEXALOGO.png?width=200)
 
-Welcome to Alexa Workshop!
+Welcome to AWS & Alexa Workshop!
 
 [Alexa](https://developer.amazon.com/alexa/) is Amazon’s cloud-based voice service available on tens of millions of 
 devices from Amazon and third-party device manufacturers. With Alexa, you can build natural voice experiences that 
