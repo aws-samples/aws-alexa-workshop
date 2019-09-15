@@ -6,10 +6,15 @@ chapter: true
 weight: 20
 ---
 
-{{% notice info %}}
+{{% notice note %}}
 如果是第一次运行这个实验，请务必选择**N.Virginia region (us-east-1)**区域.
 {{% /notice %}}
 
+{{% notice info %}}
+本使用使用 Cloud9 开发环境，请确保您已经完成
+<a href="/zh/getting-started/create-cloud9-env/" target="_blank">创建 Cloud 9 工作环境</a>. 这个链接会打开一个新的 tab, 请在完成
+创建后回到当前页面。
+{{% /notice %}}
 
 在这个实验中，您将会学习到如何使用 AWS 的服务来构建一个 Alexa-Enabled 智能灯泡。
     

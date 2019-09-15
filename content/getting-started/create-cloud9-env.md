@@ -1,5 +1,5 @@
 ---
-title: "Create a Workspace"
+title: "Create a Cloud9 Environment"
 weight: 11
 chapter: false
 draft: false
@@ -26,6 +26,8 @@ and opening a new **terminal** tab in the main work area:
 
 1. Cloud9 manages IAM credentials dynamically so you don't have to configure any further credentials.
 
+
+## Trouble shooting
 {{% notice note %}}
 Ad blockers, javascript disablers, and tracking blockers should be disabled for
 the Cloud9 domain, or connecting to the workspace might be impacted.
