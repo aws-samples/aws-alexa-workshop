@@ -25,8 +25,9 @@ weight: 10
 
 ## 限制
 
-1. 目前Alexa只支持英文对话
-1. 目前该workshop 只支持选择 **N.Virginia(us-east-1)** AWS Region。
+1. 目前 Alexa 暂不支持中文
+
+1. 目前该 workshop 只支持选择 **N.Virginia(us-east-1)** AWS Region。
 
 ## AWS 知识要求
 

@@ -1,19 +1,19 @@
 
 ---
-title: "Alexa Skill Model"
+title: "Alexa Skill 模型"
 weight: 7
 chapter: false
 draft: false
 ---
 
-The first step in building a new skill is to decide what your skill will do. This determines how your skill integrates with the Alexa service and what you need to build. The Alexa Skills Kit supports building several different types of skills, such as Custom Interaction Model, Smart Home Skills(pre-built Model), Video Skills(pre-built Model), Music Skills(pre-build Model) etc.
+The first step in building a new skill is to decide what your skill will do. This determines how your skill integrates with the Alexa service and what you need to build. The Alexa Skills Kit supports building several different types of skills, such as Custom Interaction Model, Smart Home Skills (pre-built Model) , Video Skills (pre-built Model), Music Skills (pre-build Model) etc.
 
 In this lab, we will cover two type of most commonly used models, custom interation skill & smart home skills.
 
 ### Custom Interaction Skill
 
 {{% notice note %}}
-This session is original from
+This session is quoted from
 [Alexa Skill Models # Custom Interaction Model](https://developer.amazon.com/zh/docs/ask-overviews/understanding-the-different-types-of-skills.html#custom-interaction-model)
 {{% /notice %}}
   
@@ -40,7 +40,7 @@ A custom skill can handle any kind of request, so long as you can create the cod
 ### Smart Home Skills (Pre-built Model)   
 
 {{% notice note %}}
-This session is original from
+This session is quoted from
 [Alexa Skill Models # Smart Home Skills](https://developer.amazon.com/zh/docs/ask-overviews/understanding-the-different-types-of-skills.html#smart-home-skills-pre-built-model)
 {{% /notice %}}
 

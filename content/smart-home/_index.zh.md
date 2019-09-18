@@ -1,5 +1,5 @@
 ---
-title: "实验: Smart Home Skill"
+title: "实验 2 : Smart Home Skill"
 date: 2019-09-05T23:06:51+08:00
 draft: false
 chapter: false
@@ -7,7 +7,7 @@ weight: 20
 ---
 
 {{% notice note %}}
-如果是第一次运行这个实验，请务必选择**N.Virginia region (us-east-1)**区域.
+如果是第一次运行这个实验，请务必选择**N.Virginia region (us-east-1)**区域。
 {{% /notice %}}
 
 {{% notice info %}}

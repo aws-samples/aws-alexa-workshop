@@ -1,5 +1,5 @@
 ---
-title: "Destroy Resource"
+title: "Destroy AWS Resources"
 date: 2019-09-05T23:06:51+08:00
 draft: false
 chapter: false
@@ -7,8 +7,6 @@ weight: 211
 ---
 
 In the session. We are going to destroy all the resources created in this lab.
-
-## Destroy AWS Resource
 
 ### Destroy Device Binding UI
 

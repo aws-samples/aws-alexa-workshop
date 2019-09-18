@@ -1,6 +1,6 @@
 ---
 title: "Getting Started"
-weight: 10
+weight: 11
 chapter: true
 draft: false
 ---
@@ -16,12 +16,6 @@ You could also skip this session to use your local development environment. But 
 workshop, we **highly recommend following these instructions**.
 {{% /notice %}}
 
-{{% notice warning %}}
-The Cloud9 workspace should be built by an IAM user with Administrator privileges,
-not the root account user. Please ensure you are logged in as an 
-**[IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) (account id + username + password)**, 
-not the root account (email + password).
-{{% /notice %}}
 
 
 

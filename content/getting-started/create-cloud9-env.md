@@ -1,6 +1,6 @@
 ---
 title: "Create a Cloud9 Environment"
-weight: 11
+weight: 12
 chapter: false
 draft: false
 ---
@@ -9,6 +9,14 @@ draft: false
 This workshop is designed to run in the **N.Virginia (us-east-1)** region. Please don't
 run in any other region.
 {{% /notice %}}
+
+{{% notice warning %}}
+The Cloud9 workspace should be built by an IAM user with Administrator privileges,
+not the root account user. Please ensure you are logged in as an 
+**[IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) (account id + username + password)**, 
+not the root account (email + password).
+{{% /notice %}}
+
 
 ## Launch Cloud9
 1. Go to [AWS Cloud9 Console](https://us-east-1.console.aws.amazon.com/cloud9/home/product?region=us-east-1#)
