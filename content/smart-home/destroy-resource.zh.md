@@ -3,7 +3,7 @@ title: "销毁资源"
 date: 2019-09-05T23:06:51+08:00
 draft: false
 chapter: false
-weight: 210
+weight: 211
 ---
 
 在这个章节里，我们将介绍如何销毁已经本实验中创建的资源。

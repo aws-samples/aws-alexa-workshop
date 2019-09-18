@@ -20,9 +20,13 @@ weight: 10
     和 GPS 位置依然在中国，您打开 APP 的时候可能会获得 timeout 错误。
     - 如果您无法下载 Alexa APP, 您可以使用 [AWS Device Farm](https://aws.amazon.com/device-farm/)
 
-1. 这个 workshop 中，请使用 **N.Virginia(us-east-1)** AWS Region
-
 1. [GitHub](https://github.com/) 账号
+
+
+## 限制
+
+1. 目前Alexa只支持英文对话
+1. 目前该workshop 只支持选择 **N.Virginia(us-east-1)** AWS Region。
 
 ## AWS 知识要求
 

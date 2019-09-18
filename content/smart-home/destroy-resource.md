@@ -3,7 +3,7 @@ title: "Destroy Resource"
 date: 2019-09-05T23:06:51+08:00
 draft: false
 chapter: false
-weight: 210
+weight: 211
 ---
 
 In the session. We are going to destroy all the resources created in this lab.

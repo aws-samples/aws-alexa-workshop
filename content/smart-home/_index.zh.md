@@ -2,7 +2,7 @@
 title: "实验: Smart Home Skill"
 date: 2019-09-05T23:06:51+08:00
 draft: false
-chapter: true
+chapter: false
 weight: 20
 ---
 
