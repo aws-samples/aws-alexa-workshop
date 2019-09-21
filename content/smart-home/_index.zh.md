@@ -28,4 +28,4 @@ weight: 20
 
 ## 步骤
 
-{{% children showhidden="false" %}}
+{{% children %}}
