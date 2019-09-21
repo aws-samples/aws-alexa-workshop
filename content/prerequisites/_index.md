@@ -24,11 +24,7 @@ to create an account for free.
     - If you can not download the Alexa APP due to network or account issues, you can use **[AWS Device Farm](https://aws.amazon.com/device-farm/)** as 
     an alternative plan and could still proceed with the lab.
 
-1. Use **N.Virginia(us-east-1)** AWS Region for this lab.
-
 1. Register a [GitHub](https://github.com/) account.
-
-1. (Optional) If you have an echo device, please check [Set Up Your Echo](https://www.amazon.com/gp/help/customer/display.html?nodeId=202189140) to test the skill via you echo.
 
 ## Limits
 
