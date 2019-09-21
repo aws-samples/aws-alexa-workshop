@@ -2,7 +2,9 @@
 
 Learn how to build Alexa Skills with AWS Services.
 
-To access the workshop content, please visit [https://alexaworkshop.com](https://alexaworkshop.com).
+To access the workshop content, please visit [https://alexaworkshop.com](https://alexaworkshop.com) directly.
+
+The following content guides you to run a localhost version of the content.
 
 ### Setup:
 
