@@ -30,4 +30,4 @@ of Lamp via IoT Core
 
 ## Steps
 
-{{% children showhidden="false" %}}
+{{% children %}}
