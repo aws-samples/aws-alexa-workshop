@@ -27,4 +27,5 @@ weight: 20
 * 一个 Alexa 的后端服务，该服务处理来自 Alexa 的指令，同时通过 IoT Core 操作灯泡的开关状态
 
 ## 步骤
+
 {{% children %}}
