@@ -6,66 +6,63 @@ chapter: false
 draft: false
 ---
 
-The first step in building a new skill is to decide what your skill will do. This determines how your skill integrates with the Alexa service and what you need to build. The Alexa Skills Kit supports building several different types of skills, such as Custom Interaction Model, Smart Home Skills (pre-built Model) , Video Skills (pre-built Model), Music Skills (pre-build Model) etc.
+在创建Skill之前，需要首先决定希望这个 skill 实现什么功能。这决定了您应该使用哪个 Alexa model 并且使用什么样的服务去构建它。
+Alexa Skill Kit (简称 ASK ) 支持不同种 skill 的创建，比如 Custom Interaction Model, Smart Home Skills (pre-built Model) , Video Skills (pre-built Model), Music Skills (pre-build Model) 等。
 
-In this lab, we will cover two type of most commonly used models, custom interation skill & smart home skills.
-
-### Custom Interaction Skill
+此 workshop 将涉及两种最常用的 skill model ,custom interation skill & smart home skills。在动手之前，我们先来了解一下他们的功能和场景。
 
 {{% notice note %}}
-This session is quoted from
-[Alexa Skill Models # Custom Interaction Model](https://developer.amazon.com/zh/docs/ask-overviews/understanding-the-different-types-of-skills.html#custom-interaction-model)
+此session的内容摘录自
+[Alexa Skill Models # Custom Interaction Model](https://developer.amazon.com/zh/docs/ask-overviews/understanding-the-different-types-of-skills.html) 并做了汉化。
 {{% /notice %}}
-  
-For the most control over the user's experience, build a skill with a custom interaction model. This is a custom skill.
 
-For a custom skill, you (as the developer) define:
+### Custom Interaction Skill
+ 
+custom interaction skill 是最常见的一种 model 类型。 在此类型的开发中， 您需要定义以下内容：
 
-1. **The requests the skill can handle**. These are defined as intents. For example, a skill could do any of the following:
-   - Look up tide information
-   - Order a pizza
-   - Request a taxi
+1. **Intents : 此 skill 可以处理的请求**. 比如，一个 skill 可以实现的功能包括：
+   - 查询潮汐信息 （ 涨潮落潮时间等 ）
+   - 订一个pizza
+   - 叫计程车
 
-1. **The words users say to make (or invoke) those requests**. Continuing the above examples:
-   - "Get high tide for Seattle" (this phrase would be mapped to a TideRequest intent).
-   - "Order a large pepperoni pizza" (this phrase would be mapped to an OrderPizza intent).
-   - "Order a car" (this phrase would be mapped to an OrderCar intent).
+1. **要触发这些请求的句子**. 沿用上述的例子，我们可以这么说:
+   - "帮我查一下西雅图的涨潮时间" ( 映射 TideRequest intent).
+   - "帮我订一份大份儿的 pepperoni pizza" (映射 OrderPizza intent).
+   - "帮我叫车" (映射 OrderCar intent).
 
-1. **The visual and touch interactions** that users will experience and can invoke. Alexa-enabled devices with a screen support visual displays and touch interactions, so you can create a skill that uses a combination of voice, visual, and touch interactions, or you can opt to have a skill that does not support any screen functionality
+1. **invocation name （唤醒词）: Alexa唤醒当前skill的关键词**。
+用户如果想使用这个skill，需要带着这个唤醒词。 比如，查询潮汐信息的 skill ，您可以会定义它的 invocation name 为"tide pooler"。  
 
-1. **The name Alexa uses to identify your skill**, called the invocation name. Users include this when making a request. For example, the skill for looking up tides could be called "tide pooler".   
+1. **视觉或者触摸屏交互**. 如果使用带有 Alexa 功能的带屏设备，可以自定义屏幕上显示的内容跟触摸板交互。这是 optional 的。
 
-A custom skill can handle any kind of request, so long as you can create the code to fulfill the request and provide appropriate data in the interaction model to let users invoke the request. This is the most flexible kind of skill you can build, but also the most complex, since you need to provide the interaction model.
+一个自定义 skill (custom skill) 可以处理任何请求， 只要您创建用于实现后端逻辑的代码并且配置好以上信息。这是一种最灵活的 skill，但同时也最复杂，因为您需要去完全自定义的实现。
 
 ### Smart Home Skills (Pre-built Model)   
 
-{{% notice note %}}
-This session is quoted from
-[Alexa Skill Models # Smart Home Skills](https://developer.amazon.com/zh/docs/ask-overviews/understanding-the-different-types-of-skills.html#smart-home-skills-pre-built-model)
-{{% /notice %}}
+Smart home skill也可以使您控制智能家居设备，比如摄像机，灯，冰箱，智能电视等等。因为 Alexa 实现了这个预置模型，所以您的开发流程是比较简单的。这种 skill 用户交互起来也比较简单，因为他们不需要用 **invocation name** 去唤醒当前skill。他们只需要说 "Alexa, turn on the living room lights" （打开点灯）即可。
 
-For building a skill to control smart home devices such as cameras, lights, locks, thermostats, and smart TVs, you should use the Smart Home pre-built model. This gives you less control over the user's experience, but simplifies development since you don't need to create the voice user interface yourself. These skills are also easier for end users to invoke, since they don't need to remember any invocation name and can make requests such as "Alexa, turn on the living room lights."
+在 Smart home skill 中，
 
-1. For this type of skill, the Smart Home Skill API defines:
+1. Smart Home Skill 的 API 已经定义了如下信息：
 
-   - The requests the skill can handle. These requests are called **device directives**. Examples include:
-      - turn on / turn off
-      - increase / decrease the temperature
-      - change the dimness or brightness for a light
-      - lock a door
+   - 当前 skill 可以处理的请求，也就是 **device directives**。举例如下:
+      - turn on / turn off （打开、关上 ... ）
+      - increase / decrease the temperature （增加、降低 ... 的温度）
+      - change the dimness or brightness for a light （调高、降低 ... 的亮度）
 
-   - The words users say to make (or invoke) those requests. For example:
-      - "turn off the living room lights"
+   - 用户的唤醒词。比如:
+      - "turn off the living room lights" 
       - "increase the temperature by two degrees"
       - "dim the living room lights to 20%"
       - "lock the back door"
       - "change channel to PBS"
       - "show the front door camera"
 
-1. The developer only needs to define:  
-how your skill responds to a particular directive. For instance, you write the code that makes a light turn on when your skill receives a "turn on the light" directive. This code is hosted as an AWS Lambda function. Note that a skill built with the Smart Home Skill API can respond only to the requests (device directives) supported by the API.
+1. 开发者只需要定义：  
+如何处理一个特定的 device directive。比如，您需要编写代码实现当 Alexa 收到 "turn off the light" 时，如何让您的灯设备关上。这部分的逻辑通过 **lambda** 来去定义实现。 
+需要注意的是，smart home skill在解放您的开发难度的同时，也只支持 Smart Home skill API 内有的指令。
 
-### Other skill types
-For more details about other types of skills and the differences between them, see [Understand the Different Skill Models](https://developer.amazon.com/zh/docs/ask-overviews/understanding-the-different-types-of-skills.html).
+### 其他 skill 类型
+如果您希望了解更多 skill 类型 并且比较他们之间的不同，请参考[Understand the Different Skill Models](https://developer.amazon.com/zh/docs/ask-overviews/understanding-the-different-types-of-skills.html).
 
 

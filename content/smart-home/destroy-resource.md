@@ -1,12 +1,14 @@
 ---
-title: "Destroy AWS Resources"
+title: "Conclusion & Destroy AWS Resources"
 date: 2019-09-05T23:06:51+08:00
 draft: false
 chapter: false
 weight: 211
 ---
 
-In the session. We are going to destroy all the resources created in this lab.
+Congratulations! Now you have finished all the contents for lab2: How to build a Smart home Skill.
+
+For destroying resources, please check the below.
 
 ### Destroy Device Binding UI
 

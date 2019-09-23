@@ -12,7 +12,7 @@ In this lab, we will get your through the steps of how to **build a custom Alexa
 ![](/images/ask/architecutre.png)
 
 {{% notice tip %}}
-You could find all the codes for this lab [here](https://github.com/lab798/aws-alexa-workshop-ask).
+You could find all the codes for this lab [here](https://github.com/lab798/aws-alexa-workshop-ask/tree/master/workshop).
 {{% /notice %}}
 
 ## Table of Contents

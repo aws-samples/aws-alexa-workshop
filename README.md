@@ -5,17 +5,17 @@ Welcome to AWS & Alexa Workshop!
 The goal of this workshop is learn how to build Alexa Skills using AWS Services. To
 access the workshop content, please visit [https://alexaworkshop.com](https://alexaworkshop.com).
 
+
 In this workshop, you will learn:
 1. How to build an [Alexa Custom Kill](https://developer.amazon.com/docs/custom-skills/understanding-custom-skills.html) 
 2. How to build an Alexa-enabled Lamp using [Smart Home Skill](https://developer.amazon.com/docs/smarthome/understand-the-smart-home-skill-api.html)
 3. Implement [Alexa Account Linking](https://developer.amazon.com/docs/account-linking/understand-account-linking.html)
 
-
 ## Setup:
 
 The workshop website is built on [Hugo](https://gohugo.io/). You do **NOT** need to 
 install Hugo and clone this repo if you want to run this workshop. The following step 
-is ONLY used to build the workshop material itself. 
+is **ONLY** used to build the workshop material itself and run a localhost version of the content. 
 
 #### Install Hugo:
 On a mac:

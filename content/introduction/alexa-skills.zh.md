@@ -5,21 +5,19 @@ chapter: false
 draft: false
 ---
  
-Alexa provides a set of built-in capabilities, referred to as skills. For example, Alexa's abilities 
-include playing music from multiple providers, answering questions, providing weather forecasts, 
-and querying Wikipedia. 
+Alexa 自带了一系列的内置的功能，也就是 skill。 比如您可以请 Alexa 播放音乐，回答一些基本问题，提供天气情况，查询维基百科等等。 
 
 ## Alexa Skills Kit (also known as ASK)
-The Alexa Skills Kit lets you teach Alexa new skills. Alexa skills are like apps. You can enable and disable skills, in the same way that you install and uninstall apps on your smart phone or tablet. 
-Skills are voice-driven Alexa capabilities. You can add Alexa skills to your Echo to bring products and services to life. Customers can access these new abilities by asking Alexa questions or making requests. You can build skills that provide users with many different types of abilities. For example, a skill might do any one of the following:
+Alexa Skills Kit 可以帮您实现 Alexa 开发新的skill。Alexa Skill 就像是 APP 应用程序。您可以启动或者禁用某些特定的 skill，就像您可以在手机上安装或者卸载 APP 一样。
+Skill 是 Alexa 通过声音驱动的技能。您可以为您的 echo 设备添加 Alexa skill。用户通过与 Alexa 的语音交互，可以获取您预先定义的这些能力。
+您可以构建不同种类的 skills。
 
-- Look up answers to specific questions ("Alexa, ask tide pooler for the high tide today in Seattle.")
-- Challenge the user with puzzles or games ("Alexa, play Harry Potter quiz.")
-- Control lights and other devices in the home ("Alexa, turn on the living room lights.")
-- Provide audio or text content for a customer's flash briefing ("Alexa, give me my flash briefing")
-
+比如，skill 可以实现如下功能:
+- 为特定的问题提供答案。 ("Alexa, ask tide pooler for the high tide today in Seattle.")
+- 玩游戏 ("Alexa, play Harry Potter quiz.")
+- 控制智能家居设备 ("Alexa, turn on the living room lights.")
 
 {{% notice note %}}
-This session is quoted from
+此 session 信息摘录自
 [Build Skills with the Alexa Skills Kit](https://developer.amazon.com/zh/docs/ask-overviews/build-skills-with-the-alexa-skills-kit.html) 
 {{% /notice %}}

@@ -9,6 +9,10 @@ draft: false
 
 欢迎来到 **Alexa Workshop** !
 
+{{% notice tip %}}
+此workshop提供中英两个版本。您可以在左下方的tab中切换语言。
+{{% /notice  %}}
+
 [Alexa](https://developer.amazon.com/alexa/)是亚马逊基于云的语音服务，可从亚马逊和第三方设备制造商的超过1亿台设备上获得。 
 借助Alexa，您可以构建自然的语音体验，为客户提供更直观的方式来与他们每天使用的技术进行交互。 我们的工具，API，参考解决方案和文档
 集使任何人都可以轻松地使用Alexa进行构建。
