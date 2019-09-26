@@ -13,14 +13,14 @@ chapter: false
 
 {{% notice info %}}
 AWS Device Farm 附带 1000 分钟的一次性设备免费试用时间。此后，将按照 0.17 USD 每设备分钟计费。具体定价信息，请参阅 [AWS Device Farm 定价](https://aws.amazon.com/cn/device-farm/pricing/)
-{{% /notice %}}
+{{% /notice %}}。
 
 ## 启动 Device Farm
-1. 打开 [AWS Device Farm](https://us-west-2.console.aws.amazon.com/devicefarm/home?region=us-east-1#/projects)
+1. 打开 [AWS Device Farm](https://us-west-2.console.aws.amazon.com/devicefarm/home?region=us-east-1#/projects)。
 
-1. 输入项目名称 `alexaworkshop`, 选择 **Create project**
+1. 输入项目名称 `alexaworkshop`, 选择 **Create project**。
 
-1. 在创建完项目后会进入控制台界面，我们在 **Remote access** 中选择 **Start a new session**
+1. 在创建完项目后会进入控制台界面，我们在 **Remote access** 中选择 **Start a new session**。
     ![deviceFarmConsole](/images/getting-started/device-farm-console.png)
 
 1. 在 **Choose a device** 中，我们任意选择一台状态为 **AVAILABLE** 的安卓机型，在这里我们选择 `Google Pixel 2`。等待设备创建完成后我们就会进入与该手机进行远程访问会话的界面。
@@ -31,6 +31,6 @@ AWS Device Farm 附带 1000 分钟的一次性设备免费试用时间。此后�
 
     ![deviceFarmSession](/images/getting-started/device-farm-create-session.png)
 
-1. 此时系统中是没有 Google 账号的，我们需要在添加谷歌账号之后才能完整地看到 Google Play 中所有应用。添加 Google 账号，我们需要进入手机的 **Settings - Accounts** 界面中进行账号添加。添加完之后我们进入 Google Play 中切换账户后，即可搜索下载 Alexa App。
+1. 此时系统中是没有 Google 账号的，我们需要在添加谷歌账号之后才能完整地看到 Google Play 中所有应用。添加 Google 账号，我们需要进入手机的 **Settings - Accounts** 界面中进行账号添加。添加完后，我们进入 Google Play 中切换账户，既然即可搜索下载 Alexa App。
     ![deviceFarmAddAccount](/images/getting-started/device-farm-add-account.png)
 
