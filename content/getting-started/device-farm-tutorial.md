@@ -3,6 +3,7 @@ title: "Use Alexa App on Device Farm (optional)"
 date: 2019-09-26T13:29:22+08:00
 draft: false
 chapter: false
+weight: 14
 ---
 
 If you can not download or use the Alexa App due to network or region, you can use [AWS Device Farm](https://aws.amazon.com/device-farm/) to start a real, physical phone hosted by AWS, onto which you can install and use the Alexa App. You can interact with this device by using a remote access session.  
@@ -27,7 +28,7 @@ AWS Device Farm comes with a one-time free trial of 1000 device minutes. After t
 
     {{% notice info %}}
 The duration of a remote access session is 150 minutes, after that the session will be closed and can not be used again.
-If you should close the browser or browser tab without stopping the session or if the connection between the browser and the internet is lost, the session remains active for five minutes. After that, Device Farm ends the session. 
+If you close the browser or browser tab without stopping the session or if the connection between the browser and the internet is lost, the session remains active for five minutes. After that, Device Farm ends the session. 
     {{% /notice %}}
 
     ![deviceFarmSession](/images/getting-started/device-farm-create-session.png)

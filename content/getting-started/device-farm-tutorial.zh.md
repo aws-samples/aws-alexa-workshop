@@ -3,6 +3,7 @@ title: "Device Farm 安装 Alexa App (可选)"
 date: 2019-09-26T09:45:48+08:00
 draft: false
 chapter: false
+weight: 14
 ---
 
 若您处于中国地区，无法安装或使用 Alexa App，您可以使用 AWS Device Farm 启动一台由 AWS 托管的实际物理手机，并在其之上安装使用 Alexa App。您可以通过远程访问会话的方式实现与该设备进行交互。
