@@ -14,7 +14,7 @@ pygmentsCodeFences = true
 pygmentsStyle = "monokai"
 
 [params]
-  editURL = "https://github.com/massi-ang/aws-alexa-workshop/tree/smarthome-en"
+  editURL = "https://github.com/aws-samples/aws-alexa-workshop/tree/smarthome-loft"
   description = "Alexa & IoT Workshop"
   author = "Massimiliano Angelino"
   disableBreadcrumb = false
@@ -26,9 +26,9 @@ pygmentsStyle = "monokai"
   disableLanguageSwitchingButton = false
   disableShortcutsTitle = true
   disableInlineCopyToClipBoard = true
-  lambdaRepo = "https://github.com/massi-ang/alexa-iot-smarthome"
-  uiRepo = "https://github.com/massi-ang/aws-alexa-workshop-ui"
-  simulatorRepo = "https://github.com/massi-ang/alexa-iot-workshop-lamp"
+  lambdaRepo = "https://github.com/aws-samples/aws-alexa-workshop-smarthome/tree/smarthome-loft"
+  uiRepo = "https://github.com/aws-samples/aws-alexa-workshop-ui/tree/smarthome-loft"
+  simulatorRepo = "https://github.com/aws-samples/aws-alexa-workshop-smarthome-lamp/tree/smarthome-loft"
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
