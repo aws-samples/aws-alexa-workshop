@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting Started on Alexa &amp; IoT Workshop</title>
+    <link>/getting-started.html</link>
+    <description>Recent content in Getting Started on Alexa &amp; IoT Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 05 Sep 2019 23:06:51 +0800</lastBuildDate>
+    
+	<atom:link href="/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>1. Prerequisites</title>
+      <link>/getting-started/prereq.html</link>
+      <pubDate>Thu, 05 Sep 2019 23:06:51 +0800</pubDate>
+      
+      <guid>/getting-started/prereq.html</guid>
+      <description>Accounts This chapter prepares all the prerequisites for the hands-on labs.
+ If you want to run this on your own:
+ AWS Account. Open an AWS account You need a valid credit card to set up your account.
+ Amazon developer account. Go visit Amazon Developer Portal to create an account for free.
+  or; an account provided by AWS at an AWS led workshop.
+ Alexa APP.</description>
+    </item>
+    
+    <item>
+      <title>2. Setup AWS Cloud9</title>
+      <link>/getting-started/create-cloud9-env.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/getting-started/create-cloud9-env.html</guid>
+      <description>This workshop is designed to run in the N.Virginia (us-east-1) region. Please don&amp;rsquo;t run in any other region.
+ If you are running this workshop in your own account ensure to be logged in with an IAM user with Administrator privileges and not the root account user. Refer to
+the documentation on how to create IAM users.
+ When logging in with an IAM user you&amp;rsquo;ll have to provide an account id or account alias and then a username and password.</description>
+    </item>
+    
+  </channel>
+</rss>

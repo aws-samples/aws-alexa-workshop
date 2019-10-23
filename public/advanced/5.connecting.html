@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<html lang="en" class="js csstransforms3d">
+<head>
+  <meta charset="utf-8">
+  <meta property="og:title" content="Alexa &amp; IoT Workshop" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="description" content="Alexa &amp; IoT Workshop">
+<meta name="author" content="Massimiliano Angelino">
+
+  <link rel="shortcut icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
+<link rel="icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
+
+  <title>5. Enable Alexa :: Alexa &amp; IoT Workshop</title>
+
+  
+  <link href="../css/nucleus.css" rel="stylesheet">
+  <link href="../css/fontawesome-all.min.css" rel="stylesheet">
+  <link href="../css/hybrid.css" rel="stylesheet">
+  <link href="../css/featherlight.min.css" rel="stylesheet">
+  <link href="../css/perfect-scrollbar.min.css" rel="stylesheet">
+  <link href="../css/auto-complete.css" rel="stylesheet">
+  <link href="../css/atom-one-dark-reasonable.css" rel="stylesheet">
+  <link href="../css/theme.css" rel="stylesheet">
+  <link href="../css/hugo-theme.css" rel="stylesheet">
+  
+  <link href="../css/theme-aws.css" rel="stylesheet">
+  
+
+  <script src="../js/jquery-3.3.1.min.js"></script>
+
+  <style>
+    :root #header + #content > #left > #rlblock_left{
+        display:none !important;
+    }
+    
+      :not(pre) > code + span.copy-to-clipboard {
+          display: none;
+      }
+    
+  </style>
+  
+</head>
+
+<body class="" data-url="/advanced/5.connecting.html">
+  <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <div>
+    <a href="../" title="Go home">
+        <img style="vertical-align:middle" src="../images/logo.png" height="70px" />
+    </a>
+</div>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../js/lunr.min.js"></script>
+<script type="text/javascript" src="../js/auto-complete.js"></script>
+<script type="text/javascript">
+    
+        var baseurl = "";
+    
+</script>
+<script type="text/javascript" src="../js/search.js"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/introduction.html" title="Introduction" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../introduction.html">
+          Introduction
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/introduction/what-you-will-learn.html" title="What will you learn" class="dd-item ">
+        <a href="../introduction/what-you-will-learn.html">
+        What will you learn
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/introduction/alexa-skills.html" title="What is Alexa Skills" class="dd-item ">
+        <a href="../introduction/alexa-skills.html">
+        What is Alexa Skills
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/introduction/alexa-skill-model.html" title="Alexa Skill Model" class="dd-item ">
+        <a href="../introduction/alexa-skill-model.html">
+        Alexa Skill Model
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/getting-started.html" title="Getting Started" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../getting-started.html">
+          Getting Started
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/prereq.html" title="1. Prerequisites" class="dd-item ">
+        <a href="../getting-started/prereq.html">
+        1. Prerequisites
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/create-cloud9-env.html" title="2. Setup AWS Cloud9" class="dd-item ">
+        <a href="../getting-started/create-cloud9-env.html">
+        2. Setup AWS Cloud9
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/smart-home.html" title="Smart Home Skills" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../smart-home.html">
+          Smart Home Skills
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/smart-home/deploy_app.html" title="1. Companion App" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../smart-home/deploy_app.html">
+          1. Companion App
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/smart-home/deploy_app/deploy_amplify_console.html" title="Deploy with Console" class="dd-item ">
+        <a href="../smart-home/deploy_app/deploy_amplify_console.html">
+        Deploy with Console
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/smart-home/deploy_app/deploy_amplify_cli.html" title="Deploy with CLI" class="dd-item ">
+        <a href="../smart-home/deploy_app/deploy_amplify_cli.html">
+        Deploy with CLI
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/smart-home/2.smart-lamp-simulator.html" title="2. Smart Lamp" class="dd-item ">
+        <a href="../smart-home/2.smart-lamp-simulator.html">
+        2. Smart Lamp
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/smart-home/3.bind-device.html" title="3. Claim the device" class="dd-item ">
+        <a href="../smart-home/3.bind-device.html">
+        3. Claim the device
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/smart-home/4.create-skill.html" title="4. Create Smart Home Skill" class="dd-item ">
+        <a href="../smart-home/4.create-skill.html">
+        4. Create Smart Home Skill
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/smart-home/6.account-linking.html" title="5. Setup Account Linking" class="dd-item ">
+        <a href="../smart-home/6.account-linking.html">
+        5. Setup Account Linking
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/smart-home/7.create-lambda.html" title="6. Create the Alexa backend" class="dd-item ">
+        <a href="../smart-home/7.create-lambda.html">
+        6. Create the Alexa backend
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/smart-home/8.device-discovery.html" title="7. Discover Smart Home Devices" class="dd-item ">
+        <a href="../smart-home/8.device-discovery.html">
+        7. Discover Smart Home Devices
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/smart-home/9a.test-skill.html" title="8. Test Smart Home Skill" class="dd-item ">
+        <a href="../smart-home/9a.test-skill.html">
+        8. Test Smart Home Skill
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/advanced.html" title="A Real Device" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="../advanced.html">
+          A Real Device
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/advanced/1.freertos-and-afr.html" title="1. FreeRTOS and Amazon FreeRTOS" class="dd-item ">
+        <a href="../advanced/1.freertos-and-afr.html">
+        1. FreeRTOS and Amazon FreeRTOS
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/advanced/2.hw-kit.html" title="2. Hardware kit" class="dd-item ">
+        <a href="../advanced/2.hw-kit.html">
+        2. Hardware kit
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/advanced/3.install-tool-chain.html" title="3. Your first Amazon FreeRTOS project" class="dd-item ">
+        <a href="../advanced/3.install-tool-chain.html">
+        3. Your first Amazon FreeRTOS project
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/advanced/4.afr-lamp.html" title="4. Smart lamp" class="dd-item ">
+        <a href="../advanced/4.afr-lamp.html">
+        4. Smart lamp
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/advanced/5.connecting.html" title="5. Enable Alexa" class="dd-item active">
+        <a href="../advanced/5.connecting.html">
+        5. Enable Alexa
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/cleanup.html" title="Conclusion" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../cleanup.html">
+          Conclusion
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/cleanup/destroy-resource.html" title="Conclusion &amp; Destroy AWS Resources" class="dd-item ">
+        <a href="../cleanup/destroy-resource.html">
+        Clean up
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <left>
+
+    <h5 class="copyright">&copy; 2019 Amazon Web Services, Inc. or its Affiliates. All rights reserved.<h5>
+
+</left>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+  <section id="body">
+    <div id="overlay"></div>
+    <div class="padding highlightable">
+      
+      <div>
+        <div id="top-bar">
+          
+          
+          
+          
+          <div id="top-github-link">
+            <a class="github-link" title='Edit this page' href="https://github.com/massi-ang/aws-alexa-workshop/tree/smarthome-enadvanced/5.connecting.md"
+              target="blank">
+              <i class="fas fa-code-branch"></i>
+              <span id="top-github-link-text">Edit this page</span>
+            </a>
+          </div>
+          
+          
+          
+          <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                <i class="fa fa-bars"></i>
+              </a>
+            </span>
+            
+            <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+            
+            <span class="links">
+              
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href='../'>AWS IoT & Alexa Workshop</a> > <a href='../advanced.html'>A Real Device</a> > 5. Enable Alexa
+          
+          
+          
+          
+          
+          
+            </span>
+          </div>
+          
+          <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#how-it-works">How it works</a></li>
+<li><a href="#connecting-it-to-alexa">Connecting it to Alexa</a>
+<ul>
+<li><a href="#challenge">Challenge</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+          
+        </div>
+      </div>
+      
+
+      
+        <div id="body-inner">
+          <h1>5. Enable Alexa</h1>
+          
+          
+
+
+
+
+<p>The firmware you have built and installed on the device is enabled to communicate with AWS IoT and the Device Shadow serice.</p>
+
+<h3 id="how-it-works">How it works</h3>
+
+<p>Check the file <code>aws_publish_sensors_mqtt.c</code> in <code>~/environment/esp/afr-alexa-smarthome/demos/espressif/esp32_devkitc_esp_wrover_kit/common/application_code</code>.</p>
+
+<p>The <strong>prvDeltaCallback</strong> function is invoked every time the client receives a delta message from the Shadow Service. It then parses the message and publishes the result on an internal queue.</p>
+
+<pre><code>static BaseType_t prvDeltaCallback( void * pvUserData,
+                                    const char * const pcThingName,
+                                    const char * const pcDeltaDocument,
+                                    uint32_t ulDocumentLength,
+                                    MQTTBufferHandle_t xBuffer )
+{
+    ...    LedStripState_t xLedStripState = {};
+    Message_t xMessage = {};
+    // Implement a simple ON/OFF lamp - reads the value stored in the powerState field 
+    bool state = prvSetLedsFromState(pxJsonPowerState, &amp;xLedStripState); 
+        
+    xMessage.xMessageType = LAMP_DATA;
+    strcpy(xMessage.xMessageContent.sLampMessage, (state ? &quot;ON&quot; : &quot;OFF&quot;));
+    ( void ) xQueueSend( prvSensorsDataQueueHandle, &amp;xMessage, portMAX_DELAY );
+
+    json_value_free( xJsonDoc );
+    SHADOW_ReturnMQTTBuffer( xShadowHandle, xBuffer );
+    return pdTRUE;
+}
+</code></pre>
+
+<p>The queue is then read in the task <strong>prvMQTTConnectAndPublishTask</strong> which, in function of the type of the message published, will create different responses to be published to the Device Shadow.</p>
+
+<pre><code>static void prvMQTTConnectAndPublishTask( void * pvParameters )
+{
+       ....
+        /* MQTT client is now connected to a broker. Wait for messages and publish them. */
+        for( ; ; )
+        {
+            /* We wait for the message indefinitely, so we don't need to check for the return code */
+            ( void ) xQueueReceive( prvSensorsDataQueueHandle, &amp;xMessage, portMAX_DELAY );
+
+            switch( xMessage.xMessageType )
+            {
+                case BUTTONS_DATA:
+                    configPRINTF( ( &quot;Get the button data: n: %d, s: %d \r\n&quot;, xMessage.xMessageContent.xButtonMessage.xButtonNumber, xMessage.xMessageContent.xButtonMessage.xButtonState ) );
+                    ( void ) snprintf( cDataBuffer, echoMAX_DATA_LENGTH, pcButtonUpdateTemplate,
+                                       xMessage.xMessageContent.xButtonMessage.xButtonNumber + 1,
+                                       xMessage.xMessageContent.xButtonMessage.xButtonState,
+                                       ( int ) xMQTTMessageNumber );
+                    break;
+
+                case SENSORS_DATA:
+                    configPRINTF( ( &quot;Get the sensors data: t: %d, p: %u, h: %u, i: %f \r\n&quot;,
+                                    xMessage.xMessageContent.xSensorsMessage.lTemperature,
+                                    xMessage.xMessageContent.xSensorsMessage.ulPressure,
+                                    xMessage.xMessageContent.xSensorsMessage.lHumidity,
+                                    xMessage.xMessageContent.xSensorsMessage.fIlluminance ) );
+
+                    /* Create the message that will be published, which is of the form &quot;Hello World n&quot;
+                     * where n is a monotonically increasing number. Note that snprintf appends
+                     * terminating null character to the cDataBuffer. */
+                    ( void ) snprintf( cDataBuffer, echoMAX_DATA_LENGTH, pcSensorsUpdateTemplate,
+                                       xMessage.xMessageContent.xSensorsMessage.lTemperature / 100.,
+                                       ( double ) xMessage.xMessageContent.xSensorsMessage.ulPressure,
+                                       ( double ) xMessage.xMessageContent.xSensorsMessage.lHumidity,
+                                       xMessage.xMessageContent.xSensorsMessage.fIlluminance,
+                                       ( int ) xMQTTMessageNumber );
+
+                    break;
+                case LED_DATA:
+                    pxLedState = xMessage.xMessageContent.xLedMessage.xState;
+                    ( void ) snprintf( cDataBuffer, echoMAX_DATA_LENGTH, pcLEDUpdateTemplate,
+                                       pxLedState[0].ucRed, pxLedState[0].ucGreen, pxLedState[0].ucBlue,
+                                       pxLedState[1].ucRed, pxLedState[1].ucGreen, pxLedState[1].ucBlue,
+                                       pxLedState[2].ucRed, pxLedState[2].ucGreen, pxLedState[2].ucBlue,
+                                       pxLedState[3].ucRed, pxLedState[3].ucGreen, pxLedState[3].ucBlue,
+                                       pxLedState[4].ucRed, pxLedState[4].ucGreen, pxLedState[4].ucBlue,
+                                       ( int ) xMQTTMessageNumber );
+                break;
+                 case LAMP_DATA:
+                    ( void ) snprintf( cDataBuffer, echoMAX_DATA_LENGTH, pcLampUpdateTemplate,
+                                        xMessage.xMessageContent.sLampMessage,
+                                       ( int ) xMQTTMessageNumber );
+                break;
+                default:
+                    break;
+            }
+
+            /* Fill the common update parameters */
+            xUpdateParam.pcThingName = clientcredentialIOT_THING_NAME;
+            xUpdateParam.xQoS = eMQTTQoS0;
+            xUpdateParam.pcData = cDataBuffer;
+            xUpdateParam.ucKeepSubscriptions = pdTRUE;
+            xUpdateParam.ulDataLength = ( uint32_t ) strlen( cDataBuffer );
+            /* Publish the message */
+            configPRINTF( ( &quot;%s \r\n&quot;, cDataBuffer ) );
+            xReturned = SHADOW_Update( xShadowHandle, &amp;xUpdateParam, MQTT_TIMEOUT * 3 );
+
+            if( xReturned == eShadowSuccess )
+            {
+                configPRINTF( ( &quot;Successfully performed update.\r\n&quot; ) );
+            }
+            else
+            {
+                configPRINTF( ( &quot;Update failed, returned %d.\r\n&quot;, xReturned ) );
+            }
+
+            xMQTTMessageNumber += 1;
+        }
+        /* Disconnect the client. */
+        ( void ) SHADOW_ClientDisconnect( xShadowHandle );
+    }
+
+...
+}
+</code></pre>
+
+<h3 id="connecting-it-to-alexa">Connecting it to Alexa</h3>
+
+<p>In order to be able to control the device via Alexa you have to claim it to your account and then ask Alexa to Discover it. Same as you already did for the virtual device.</p>
+
+<p>Once you have discovered the device, you are able to control it via vocal commands in the Alexa App.</p>
+
+<p>If you had figured out how to change the Discovery response to display the device as a Lamp, you should also be able to control its operation via the App UI.</p>
+
+<p><img src="../images/alexa-app-lamp.png?width=250" alt="" /></p>
+
+<h4 id="challenge">Challenge</h4>
+
+<p>This code only turn on or off all the leds in white. Can you change the implementation to be also be able to control the <a href="https://developer.amazon.com/docs/device-apis/alexa-colorcontroller.html" target="_blank">color</a> and the <a href="https://developer.amazon.com/docs/device-apis/alexa-brightnesscontroller.html" target="_blank">intensity</a>? A DIY <a href="https://developer.amazon.com/docs/smarthome/connect-a-color-changing-light-bulb-to-alexa.html" target="_blank">color changing light-bulb</a>!</p>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../advanced/4.afr-lamp.html" title="4. Smart lamp"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../cleanup.html" title="Conclusion" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../js/clipboard.min.js"></script>
+    <script src="../js/perfect-scrollbar.min.js"></script>
+    <script src="../js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="../js/jquery.sticky.js"></script>
+    <script src="../js/featherlight.min.js"></script>
+    <script src="../js/html5shiv-printshiv.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../js/modernizr.custom-3.6.0.js"></script>
+    <script src="../js/learn.js"></script>
+    <script src="../js/hugo-learn.js"></script>
+
+    <link href="../mermaid/mermaid.css" rel="stylesheet" />
+    <script src="../mermaid/mermaid.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+  </body>
+</html>
+

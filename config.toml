@@ -1,0 +1,44 @@
+RelativeURLs=true
+CanonifyURLs=true
+languageCode = "en-US"
+defaultContentLanguage = "en"
+
+title = "Alexa & IoT Workshop"
+theme = "learn"
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= true
+
+uglyurls = true
+sectionPagesMenu = "main"
+pygmentsCodeFences = true
+pygmentsStyle = "monokai"
+
+[params]
+  editURL = "https://github.com/massi-ang/aws-alexa-workshop/tree/smarthome-en"
+  description = "Alexa & IoT Workshop"
+  author = "Massimiliano Angelino"
+  disableBreadcrumb = false
+  disableNextPrev = false
+  branch = "smarthome-en"
+  themeVariant = "aws"
+  disableSearch = false
+  disableAssetsBusting = true
+  disableLanguageSwitchingButton = false
+  disableShortcutsTitle = true
+  disableInlineCopyToClipBoard = true
+  lambdaRepo = "https://github.com/massi-ang/alexa-iot-smarthome"
+  uiRepo = "https://github.com/massi-ang/aws-alexa-workshop-ui"
+  simulatorRepo = "https://github.com/massi-ang/alexa-iot-workshop-lamp"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[blackfriday]
+plainIDAnchors = true
+hrefTargetBlank = true
+
+[Languages]
+[Languages.en]
+title = "Alexa & IoT Workshop"
+weight = 1
+languageName = "English"

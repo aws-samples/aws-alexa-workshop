@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Conclusion on Alexa &amp; IoT Workshop</title>
+    <link>/cleanup.html</link>
+    <description>Recent content in Conclusion on Alexa &amp; IoT Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 05 Sep 2019 23:06:51 +0800</lastBuildDate>
+    
+	<atom:link href="/cleanup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Conclusion &amp; Destroy AWS Resources</title>
+      <link>/cleanup/destroy-resource.html</link>
+      <pubDate>Thu, 05 Sep 2019 23:06:51 +0800</pubDate>
+      
+      <guid>/cleanup/destroy-resource.html</guid>
+      <description>Congratulations! Now you have concluded this workshop about How to build a Smart home Skill.
+For destroying resources, please check the below.
+Destroy Device Binding UI  Go to Cognito User Pool Console
+ Select the User Pool created
+ Click Domain name on the left side bar
+ Click Delete domain, select the checkbox and confirm to delete
+ Go to AWS Amplify Console
+ Select the Amplify APP</description>
+    </item>
+    
+  </channel>
+</rss>

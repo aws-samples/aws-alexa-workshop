@@ -1,0 +1,1774 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<html lang="en" class="js csstransforms3d">
+<head>
+  <meta charset="utf-8">
+  <meta property="og:title" content="Alexa &amp; IoT Workshop" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="description" content="Alexa &amp; IoT Workshop">
+<meta name="author" content="Massimiliano Angelino">
+
+  <link rel="shortcut icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
+<link rel="icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
+
+  <title>5. Setup Account Linking :: Alexa &amp; IoT Workshop</title>
+
+  
+  <link href="../css/nucleus.css" rel="stylesheet">
+  <link href="../css/fontawesome-all.min.css" rel="stylesheet">
+  <link href="../css/hybrid.css" rel="stylesheet">
+  <link href="../css/featherlight.min.css" rel="stylesheet">
+  <link href="../css/perfect-scrollbar.min.css" rel="stylesheet">
+  <link href="../css/auto-complete.css" rel="stylesheet">
+  <link href="../css/atom-one-dark-reasonable.css" rel="stylesheet">
+  <link href="../css/theme.css" rel="stylesheet">
+  <link href="../css/hugo-theme.css" rel="stylesheet">
+  
+  <link href="../css/theme-aws.css" rel="stylesheet">
+  
+
+  <script src="../js/jquery-3.3.1.min.js"></script>
+
+  <style>
+    :root #header + #content > #left > #rlblock_left{
+        display:none !important;
+    }
+    
+      :not(pre) > code + span.copy-to-clipboard {
+          display: none;
+      }
+    
+  </style>
+  
+</head>
+
+<body class="" data-url="/smart-home/6.account-linking.html">
+  <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <div>
+    <a href="../" title="Go home">
+        <img style="vertical-align:middle" src="../images/logo.png" height="70px" />
+    </a>
+</div>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../js/lunr.min.js"></script>
+<script type="text/javascript" src="../js/auto-complete.js"></script>
+<script type="text/javascript">
+    
+        var baseurl = "";
+    
+</script>
+<script type="text/javascript" src="../js/search.js"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/introduction.html" title="Introduction" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../introduction.html">
+          Introduction
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/introduction/what-you-will-learn.html" title="What will you learn" class="dd-item ">
+        <a href="../introduction/what-you-will-learn.html">
+        What will you learn
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/introduction/alexa-skills.html" title="What is Alexa Skills" class="dd-item ">
+        <a href="../introduction/alexa-skills.html">
+        What is Alexa Skills
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/introduction/alexa-skill-model.html" title="Alexa Skill Model" class="dd-item ">
+        <a href="../introduction/alexa-skill-model.html">
+        Alexa Skill Model
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/getting-started.html" title="Getting Started" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../getting-started.html">
+          Getting Started
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/prereq.html" title="1. Prerequisites" class="dd-item ">
+        <a href="../getting-started/prereq.html">
+        1. Prerequisites
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/create-cloud9-env.html" title="2. Setup AWS Cloud9" class="dd-item ">
+        <a href="../getting-started/create-cloud9-env.html">
+        2. Setup AWS Cloud9
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/smart-home.html" title="Smart Home Skills" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="../smart-home.html">
+          Smart Home Skills
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/smart-home/deploy_app.html" title="1. Companion App" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../smart-home/deploy_app.html">
+          1. Companion App
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/smart-home/deploy_app/deploy_amplify_console.html" title="Deploy with Console" class="dd-item ">
+        <a href="../smart-home/deploy_app/deploy_amplify_console.html">
+        Deploy with Console
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/smart-home/deploy_app/deploy_amplify_cli.html" title="Deploy with CLI" class="dd-item ">
+        <a href="../smart-home/deploy_app/deploy_amplify_cli.html">
+        Deploy with CLI
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/smart-home/2.smart-lamp-simulator.html" title="2. Smart Lamp" class="dd-item ">
+        <a href="../smart-home/2.smart-lamp-simulator.html">
+        2. Smart Lamp
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/smart-home/3.bind-device.html" title="3. Claim the device" class="dd-item ">
+        <a href="../smart-home/3.bind-device.html">
+        3. Claim the device
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/smart-home/4.create-skill.html" title="4. Create Smart Home Skill" class="dd-item ">
+        <a href="../smart-home/4.create-skill.html">
+        4. Create Smart Home Skill
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/smart-home/6.account-linking.html" title="5. Setup Account Linking" class="dd-item active">
+        <a href="../smart-home/6.account-linking.html">
+        5. Setup Account Linking
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/smart-home/7.create-lambda.html" title="6. Create the Alexa backend" class="dd-item ">
+        <a href="../smart-home/7.create-lambda.html">
+        6. Create the Alexa backend
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/smart-home/8.device-discovery.html" title="7. Discover Smart Home Devices" class="dd-item ">
+        <a href="../smart-home/8.device-discovery.html">
+        7. Discover Smart Home Devices
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/smart-home/9a.test-skill.html" title="8. Test Smart Home Skill" class="dd-item ">
+        <a href="../smart-home/9a.test-skill.html">
+        8. Test Smart Home Skill
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/advanced.html" title="A Real Device" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../advanced.html">
+          A Real Device
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/advanced/1.freertos-and-afr.html" title="1. FreeRTOS and Amazon FreeRTOS" class="dd-item ">
+        <a href="../advanced/1.freertos-and-afr.html">
+        1. FreeRTOS and Amazon FreeRTOS
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/advanced/2.hw-kit.html" title="2. Hardware kit" class="dd-item ">
+        <a href="../advanced/2.hw-kit.html">
+        2. Hardware kit
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/advanced/3.install-tool-chain.html" title="3. Your first Amazon FreeRTOS project" class="dd-item ">
+        <a href="../advanced/3.install-tool-chain.html">
+        3. Your first Amazon FreeRTOS project
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/advanced/4.afr-lamp.html" title="4. Smart lamp" class="dd-item ">
+        <a href="../advanced/4.afr-lamp.html">
+        4. Smart lamp
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/advanced/5.connecting.html" title="5. Enable Alexa" class="dd-item ">
+        <a href="../advanced/5.connecting.html">
+        5. Enable Alexa
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/cleanup.html" title="Conclusion" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../cleanup.html">
+          Conclusion
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/cleanup/destroy-resource.html" title="Conclusion &amp; Destroy AWS Resources" class="dd-item ">
+        <a href="../cleanup/destroy-resource.html">
+        Clean up
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <left>
+
+    <h5 class="copyright">&copy; 2019 Amazon Web Services, Inc. or its Affiliates. All rights reserved.<h5>
+
+</left>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+  <section id="body">
+    <div id="overlay"></div>
+    <div class="padding highlightable">
+      
+      <div>
+        <div id="top-bar">
+          
+          
+          
+          
+          <div id="top-github-link">
+            <a class="github-link" title='Edit this page' href="https://github.com/massi-ang/aws-alexa-workshop/tree/smarthome-ensmart-home/6.account-linking.md"
+              target="blank">
+              <i class="fas fa-code-branch"></i>
+              <span id="top-github-link-text">Edit this page</span>
+            </a>
+          </div>
+          
+          
+          
+          <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                <i class="fa fa-bars"></i>
+              </a>
+            </span>
+            
+            <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+            
+            <span class="links">
+              
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href='../'>AWS IoT & Alexa Workshop</a> > <a href='../smart-home.html'>Smart Home Skills</a> > 5. Setup Account Linking
+          
+          
+          
+          
+          
+          
+            </span>
+          </div>
+          
+          <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#what-is-account-linking">What is Account Linking</a></li>
+<li><a href="#configure-cognito-user-pool">Configure Cognito User Pool</a></li>
+<li><a href="#configure-cognito-user-pool-domain-name">Configure Cognito User Pool domain name</a></li>
+<li><a href="#configure-account-linking-in-alexa-developer-console">Configure Account Linking in Alexa Developer Console</a></li>
+<li><a href="#perform-account-linking-in-alexa-app">Perform Account Linking in Alexa App</a></li>
+<li><a href="#reference">Reference</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+          
+        </div>
+      </div>
+      
+
+      
+        <div id="body-inner">
+          <h1>5. Setup Account Linking</h1>
+          
+          
+
+
+
+
+<p>In this step you are going to setup <strong>Account Linking</strong> between your backend and Alexa. Account linking is required by Alexa when using Smart Home Skills in order to be able to identify the devices belonging to a given user.</p>
+
+<p>When you deployed the Companion App, a Congito User Pool was created in the AWS account to store the user identities. Cognito provides a managed IdP that developers can use to manage their users identities and link them with Amazon accounts without writing one line of code.</p>
+
+<p>For more information about Amazon Cognito User Pool, please refer to the
+<a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html" target="_blank">developer guide</a>.</p>
+
+<h2 id="what-is-account-linking">What is Account Linking</h2>
+
+
+<div class="notices note" ><p>If you already know what Account Linking is, you can skip to <a href="#configure-cognito-user-pool">Configure App Client OAuth 2.0 Settings</a></p>
+</div>
+
+
+<p>In <a href="#configure-app-client-oauth-2-0-settings" target="_blank">Claim the device</a> you have associated the Smart Lamp to the customer account in your backend. When the same customer interact with Alexa via the Alexa App or an Echo device, the Alexa backend will identify him/her with the Amazon identity. On order for the commands to be directed to the right devices, Alexa has to map the Amazon identity of the customer to the customer identity in your backend.</p>
+
+<p>Account Linking in the Alexa Skills Kit uses <a href="https://tools.ietf.org/html/rfc6749" target="_blank">OAuth 2.0</a>.
+The following diagram explains the flow of obtain an <strong>AccessToken</strong> from your OAuth2.0 system.</p>
+
+<p><img src="../images/smart-home/auth-code-flow.png" alt="Auth-Code-Flow" /></p>
+
+<p>Alexa will send all the directives to you backend together with an <strong>AccessToken</strong>. The
+backend should verify and decode the <strong>AccessToken</strong> to get user related information.</p>
+
+<p><img src="../images/smart-home/skill-interaction-flow.png" alt="Flow" /></p>
+
+<h2 id="configure-cognito-user-pool">Configure Cognito User Pool</h2>
+
+<p>Alexa has to connect to Cognito User Pool to verify the user identity during the Account Linking, and the next steps will configure
+the Cognito User Pool with a new OAuth 2.0 client for Alexa.</p>
+
+<ol>
+<li><p>Go to <a href="https://console.aws.amazon.com/cognito/users/?region=us-east-1#" target="_blank">Cognito User Pool Console</a></p></li>
+
+<li><p>Select the user pool called <code>awsalexaui...</code></p></li>
+
+<li><p>In the left navigatiaon bar, under General Settings, select <strong>App clients</strong></p></li>
+
+<li><p>Click on <strong>Add another app client</strong> at the bottom of the list of clients</p></li>
+
+<li><p>Enter a new <strong>App client name</strong> (eg <code>alexa</code>) and click on <strong>Create app client</strong></p></li>
+
+<li><p>On the left side navigation bar, under App integration, select <strong>App client settings</strong></p></li>
+
+<li><p>Find the App Client you just created. It should be named <code>alexa</code></p></li>
+
+<li><p>Under <strong>Enabled Identity Providers</strong>，select <strong>Cognito User Pool</strong></p></li>
+
+<li><p>In <strong>Callback URL(s)</strong>，enter <strong>Redirect URLs</strong> copied from Alexa Developer Console, separated by a comma. In Alexa Developer Console,
+choose <strong>Account Linking</strong>, scroll down to the bottom, you should be able to find three <strong>Redirect URL</strong>. Alexa redirect
+to different url based on user&rsquo;s region. To serve all the Alexa users, it is suggested to copy all the URLs.</p></li>
+
+<li><p>In <strong>Allowed OAuth Flows</strong> session，choose <strong>Authorization code grant</strong></p></li>
+
+<li><p>In <strong>Allowed OAuth Scopes</strong> session，choose <strong>openid</strong></p></li>
+
+<li><p>Click <strong>Save changes</strong></p></li>
+</ol>
+
+<p><img src="../images/smart-home/configure-cup-oauth.png" alt="" /></p>
+
+<h2 id="configure-cognito-user-pool-domain-name">Configure Cognito User Pool domain name</h2>
+
+<p>In order for Alexa to be able to contact the User Pool you need to setup a public domain name.
+You can either use the default domain names available in Cognito which follow the pattern <code>https://&lt;your-domain-prefix&gt;.auth.&lt;region&gt;.amazoncognito.com</code>,
+or you can use your own domain name. To get more information please refer to
+<a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-add-custom-domain.html#cognito-user-pools-add-custom-domain-adding" target="_blank">Adding a Custom Domain to a User Pool</a>。</p>
+
+<p>For simplicity, let&rsquo;s configure the default domain name:</p>
+
+<ol>
+<li><p>Go to Cognito User Pool Console</p></li>
+
+<li><p>On the left side bar, under <strong>App integration</strong>, choose <strong>Domain name</strong></p></li>
+
+<li><p>Enter domain prefix and click <strong>Check availability</strong>, the domain name must be unique in the region</p></li>
+
+<li><p>If the message <strong>the domain is available</strong> appear you can press <strong>Save changes</strong></p></li>
+</ol>
+
+<p><img src="../images/smart-home/cognito-domain.png" alt="" /></p>
+
+<h2 id="configure-account-linking-in-alexa-developer-console">Configure Account Linking in Alexa Developer Console</h2>
+
+<p>Now that we have setup the Cognito User Pool to allow an OAuth2.0 client to connect we can complete the Account Linking setup in the Alexa Developer console.</p>
+
+<ol>
+<li><p>Go to <a href="https://developer.amazon.com/alexa/console/ask" target="_blank">Alexa Console</a></p></li>
+
+<li><p>In the <strong>Skills</strong> list，choose the previously created skill</p></li>
+
+<li><p>On the left side navigation bar，choose <strong>Account Linking</strong></p></li>
+
+<li><p>Under <strong>Security Provider Information</strong>，choose <strong>Auth Code Grant</strong></p></li>
+
+<li><p>Enter <code>https://&lt;your-cognito-domain&gt;/oauth2/authorize</code> in <strong>Authorization URI</strong></p></li>
+
+<li><p>Enter <code>https://&lt;your-cognito-domain&gt;/oauth2/token</code> in <strong>Access Token URI</strong></p></li>
+
+<li><p>Enter <strong>Client ID</strong> and <strong>Client Secret</strong> (click <strong>Show details</strong> to display it) that you can find in Cognito User Pool console, under <strong>App Clients</strong> section
+<img src="../images/smart-home/find-client-credentials.png" alt="" /></p></li>
+
+<li><p>Click <strong>Add scope</strong> and input <code>openid</code>. For Smart Home skill at least one scope should be specified which allows the retrieval of the user information.</p></li>
+
+<li><p>Change <strong>Authnetication scheme</strong> to <strong>Credentials in request body</strong></p></li>
+
+<li><p>Click <strong>Save</strong> on the top right corner</p></li>
+</ol>
+
+<p>For more about Cognito OAuth2.0 URI, please refer to
+<a href="https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-userpools-server-contract-reference.html" target="_blank">Amazon Cognito User Pools Auth API Reference</a></p>
+
+<h2 id="perform-account-linking-in-alexa-app">Perform Account Linking in Alexa App</h2>
+
+
+<div class="notices info" ><p>A Skill in development is only accessible by the same account that has been used to develop it. Ensure that you are using the right credentials when logging in the app.</p>
+</div>
+
+
+<ol>
+<li><p>Launch Alexa APP on mobile phone</p></li>
+
+<li><p>Click the button on the top left corner</p></li>
+
+<li><p>Choose <strong>Skills &amp; Games</strong>, then click <strong>Your Skills</strong></p></li>
+
+<li><p>Scroll the boxes left and click the <strong>Dev</strong></p></li>
+
+<li><p>Your created Smart Home Skill <strong>SmartLamp</strong> should be listed below. Click it to continue.</p></li>
+
+<li><p>Click the <strong>Enable To Use</strong> button</p></li>
+
+<li><p>On the popup window, input your <strong>email</strong> and <strong>password</strong>, if have not registered yet, sign up one</p></li>
+
+<li><p>Account Link success
+<img src="../images/smart-home/account-linking-success.jpeg" alt="" /></p></li>
+</ol>
+
+
+<div class="notices warning" ><p>Do not try to Discover Devices now, it will not work! We have to create the Alexa Skill first which we will do next.</p>
+</div>
+
+
+<p>Smart Home Skills require Account Linking to be enabled. As explained previously the directives that are sent
+from Alexa to your skill will contain a JWT encoded <strong>accessToken</strong> in the message body.
+Your backend should verify the authenticity of the token and decode it to obtain
+the user identity.</p>
+
+<h2 id="reference">Reference</h2>
+
+<p><a href="https://developer.amazon.com/docs/account-linking/understand-account-linking.html" target="_blank">Understand Account Linking</a></p>
+
+<p><a href="https://tools.ietf.org/html/rfc6749" target="_blank">The OAuth2.0 Authorization Framework</a></p>
+
+<p><a href="https://en.wikipedia.org/wiki/JSON_Web_Token" target="_blank">JSON Web Token</a></p>
+
+<p><a href="https://docs.aws.amazon.com/zh_cn/cognito/latest/developerguide/cognito-user-identity-pools.html" target="_blank">AWS Cognito User Pool</a></p>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../smart-home/deploy_app/deploy_amplify_cli.html" title="Deploy with CLI"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../smart-home/deploy_app.html" title="1. Companion App" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../js/clipboard.min.js"></script>
+    <script src="../js/perfect-scrollbar.min.js"></script>
+    <script src="../js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="../js/jquery.sticky.js"></script>
+    <script src="../js/featherlight.min.js"></script>
+    <script src="../js/html5shiv-printshiv.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../js/modernizr.custom-3.6.0.js"></script>
+    <script src="../js/learn.js"></script>
+    <script src="../js/hugo-learn.js"></script>
+
+    <link href="../mermaid/mermaid.css" rel="stylesheet" />
+    <script src="../mermaid/mermaid.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+  </body>
+</html>
+

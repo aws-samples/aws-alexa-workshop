@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2019-09-05T23:06:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/introduction.html</loc>
+  </url>
+  
+  <url>
+    <loc>/introduction/what-you-will-learn.html</loc>
+  </url>
+  
+  <url>
+    <loc>/introduction/alexa-skills.html</loc>
+  </url>
+  
+  <url>
+    <loc>/introduction/alexa-skill-model.html</loc>
+  </url>
+  
+  <url>
+    <loc>/getting-started/prereq.html</loc>
+    <lastmod>2019-09-05T23:06:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/getting-started.html</loc>
+    <lastmod>2019-09-05T23:06:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/getting-started/create-cloud9-env.html</loc>
+  </url>
+  
+  <url>
+    <loc>/smart-home.html</loc>
+    <lastmod>2019-09-05T23:06:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/smart-home/deploy_app.html</loc>
+    <lastmod>2019-09-05T23:06:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/smart-home/deploy_app/deploy_amplify_console.html</loc>
+    <lastmod>2019-09-05T23:06:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/smart-home/deploy_app/deploy_amplify_cli.html</loc>
+    <lastmod>2019-09-05T23:06:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/smart-home/2.smart-lamp-simulator.html</loc>
+    <lastmod>2019-09-05T23:06:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/smart-home/3.bind-device.html</loc>
+    <lastmod>2019-09-05T23:06:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/smart-home/4.create-skill.html</loc>
+    <lastmod>2019-09-05T23:06:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/smart-home/6.account-linking.html</loc>
+    <lastmod>2019-09-05T23:06:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/smart-home/7.create-lambda.html</loc>
+    <lastmod>2019-09-05T23:06:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/smart-home/8.device-discovery.html</loc>
+    <lastmod>2019-09-05T23:06:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/smart-home/9a.test-skill.html</loc>
+    <lastmod>2019-09-05T23:06:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/advanced.html</loc>
+    <lastmod>2019-09-05T23:06:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/advanced/1.freertos-and-afr.html</loc>
+    <lastmod>2019-09-05T23:06:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/advanced/2.hw-kit.html</loc>
+    <lastmod>2019-09-05T23:06:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/advanced/3.install-tool-chain.html</loc>
+    <lastmod>2019-09-05T23:06:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/advanced/4.afr-lamp.html</loc>
+    <lastmod>2019-09-05T23:06:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/advanced/5.connecting.html</loc>
+    <lastmod>2019-09-05T23:06:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/cleanup.html</loc>
+    <lastmod>2019-09-05T23:06:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/cleanup/destroy-resource.html</loc>
+    <lastmod>2019-09-05T23:06:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories.html</loc>
+  </url>
+  
+  <url>
+    <loc>/tags.html</loc>
+  </url>
+  
+</urlset>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction on Alexa &amp; IoT Workshop</title>
+    <link>/introduction.html</link>
+    <description>Recent content in Introduction on Alexa &amp; IoT Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="/introduction/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What will you learn</title>
+      <link>/introduction/what-you-will-learn.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/introduction/what-you-will-learn.html</guid>
+      <description> Learning objectives  Understand the Alexa Smart Home Skill interaction model Understand account linking and why it is necessary Understand the interaction between the Alexa Cloud and the Device Cloud Deploy a Device Cloud using AWS services  </description>
+    </item>
+    
+    <item>
+      <title>What is Alexa Skills</title>
+      <link>/introduction/alexa-skills.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/introduction/alexa-skills.html</guid>
+      <description>Alexa provides a set of built-in capabilities, referred to as skills. For example, Alexa&amp;rsquo;s abilities include playing music from multiple providers, answering questions, providing weather forecasts, and querying Wikipedia. Check this doc for more information.
+Alexa Skills Kit (also known as ASK) The Alexa Skills Kit lets you teach Alexa new skills. Alexa skills are like apps. You can enable and disable skills, in the same way that you install and uninstall apps on your smart phone or tablet.</description>
+    </item>
+    
+    <item>
+      <title>Alexa Skill Model</title>
+      <link>/introduction/alexa-skill-model.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/introduction/alexa-skill-model.html</guid>
+      <description>The first step in building a new skill is to decide what your skill will do. This determines how your skill integrates with the Alexa service and what you need to build. The Alexa Skills Kit supports building several different types of skills, such as Custom Interaction Model, Smart Home Skills (pre-built model), Video Skills (pre-built model), Music Skills (pre-build model) etc. You can find the up-to-date list of supported models here</description>
+    </item>
+    
+  </channel>
+</rss>

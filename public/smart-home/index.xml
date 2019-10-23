@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Smart Home Skills on Alexa &amp; IoT Workshop</title>
+    <link>/smart-home.html</link>
+    <description>Recent content in Smart Home Skills on Alexa &amp; IoT Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 05 Sep 2019 23:06:51 +0800</lastBuildDate>
+    
+	<atom:link href="/smart-home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2. Smart Lamp</title>
+      <link>/smart-home/2.smart-lamp-simulator.html</link>
+      <pubDate>Thu, 05 Sep 2019 23:06:51 +0800</pubDate>
+      
+      <guid>/smart-home/2.smart-lamp-simulator.html</guid>
+      <description>In this step you&amp;rsquo;ll learn how to connect a virtual Smart Lamp to AWS IoT Core in order to be able to control it remotely. The programming model used in this simulated device is similar to what you would embed in the real thing, albeit you might use Amazon FreeRTOS and not NodeJS.
+Create a Thing on AWS IoT Console For the device to be able to communicate with AWS IoT, we need to setup few things first.</description>
+    </item>
+    
+    <item>
+      <title>3. Claim the device</title>
+      <link>/smart-home/3.bind-device.html</link>
+      <pubDate>Thu, 05 Sep 2019 23:06:51 +0800</pubDate>
+      
+      <guid>/smart-home/3.bind-device.html</guid>
+      <description>In this step you are going to associate the virtual Smart Lamp to a customer account to create binding relationship between device and user.
+ Use your Camera or Wechat Application to scan the QR Code that has been printed in the terminal window when you run the lamp simulator. NOTE: From a laptop you can click on the URL link that is shown in the terminal under the QR Code</description>
+    </item>
+    
+    <item>
+      <title>4. Create Smart Home Skill</title>
+      <link>/smart-home/4.create-skill.html</link>
+      <pubDate>Thu, 05 Sep 2019 23:06:51 +0800</pubDate>
+      
+      <guid>/smart-home/4.create-skill.html</guid>
+      <description>Using the Alexa Developer portal, we are going to configure the Smart Home Skill.
+At the end of this step you&amp;rsquo;ll obtain the Skill Id that will be used to setup your skill logic in Lambda.
+In order to successuflly run this workshop as-is you need to have an Alexa account registered in the US. If you are unsure about where your account has been registered to, we advice to create a new account.</description>
+    </item>
+    
+    <item>
+      <title>5. Setup Account Linking</title>
+      <link>/smart-home/6.account-linking.html</link>
+      <pubDate>Thu, 05 Sep 2019 23:06:51 +0800</pubDate>
+      
+      <guid>/smart-home/6.account-linking.html</guid>
+      <description>In this step you are going to setup Account Linking between your backend and Alexa. Account linking is required by Alexa when using Smart Home Skills in order to be able to identify the devices belonging to a given user.
+When you deployed the Companion App, a Congito User Pool was created in the AWS account to store the user identities. Cognito provides a managed IdP that developers can use to manage their users identities and link them with Amazon accounts without writing one line of code.</description>
+    </item>
+    
+    <item>
+      <title>6. Create the Alexa backend</title>
+      <link>/smart-home/7.create-lambda.html</link>
+      <pubDate>Thu, 05 Sep 2019 23:06:51 +0800</pubDate>
+      
+      <guid>/smart-home/7.create-lambda.html</guid>
+      <description>It is now time to create the backend for your skill, ie the service that will receive the Alexa directives corresponding to the user interactions with Alexa. In order to create a robust solution without having to setup and maintain a lot of infrastructure you are going to use Lambda.
+Make sure you&amp;rsquo;ve selected the N.Virginia region before you continue.
+Create Lambda Execution Role  Go to IAM Console, choose Roles on the left side bar</description>
+    </item>
+    
+    <item>
+      <title>7. Discover Smart Home Devices</title>
+      <link>/smart-home/8.device-discovery.html</link>
+      <pubDate>Thu, 05 Sep 2019 23:06:51 +0800</pubDate>
+      
+      <guid>/smart-home/8.device-discovery.html</guid>
+      <description>There are a couple of ways to invoke Discover directive:
+ ask &amp;ldquo;Alexa, discover my smart home devices&amp;rdquo; to Echo/Alexa App or AVS devices. use the mobile app  Let&amp;rsquo;s use the second:
+ Open Alexa App
+ Choose Devices, and then click add icon
+ Choose Add Device
+ Scroll to the bottom, and then choose Other
+ Click Discover Devices. Wait for 20s, the discover process may take longer.</description>
+    </item>
+    
+    <item>
+      <title>8. Test Smart Home Skill</title>
+      <link>/smart-home/9a.test-skill.html</link>
+      <pubDate>Thu, 05 Sep 2019 23:06:51 +0800</pubDate>
+      
+      <guid>/smart-home/9a.test-skill.html</guid>
+      <description>Now, you can try control the Smart Lamp power status using voice.
+Change ON/OFF status of smart lamp Make sure your Smart Lamp Simulator is running. You will see the output from its terminal.
+  Try to say Alexa, turn on &amp;lt;device-friendly-name&amp;gt; to Alexa App or Echo device.
+ Try to say Alexa, turn off &amp;lt;device-friendly-name&amp;gt; to Alexa App or Echo device.
+ Check your Smart Lamp Simulator output</description>
+    </item>
+    
+  </channel>
+</rss>

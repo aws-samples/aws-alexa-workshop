@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>A Real Device on Alexa &amp; IoT Workshop</title>
+    <link>/advanced.html</link>
+    <description>Recent content in A Real Device on Alexa &amp; IoT Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 05 Sep 2019 23:06:51 +0800</lastBuildDate>
+    
+	<atom:link href="/advanced/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>1. FreeRTOS and Amazon FreeRTOS</title>
+      <link>/advanced/1.freertos-and-afr.html</link>
+      <pubDate>Thu, 05 Sep 2019 23:06:51 +0800</pubDate>
+      
+      <guid>/advanced/1.freertos-and-afr.html</guid>
+      <description>Programming MCUs When programming microcontrollers there are mainly 2 paradigms:
+ the super-loop real-time operating system  Super-loop In the super-loop model, think Arduino, the program consist in an infinite loop that executes each step in a given sequence, evaluates the different branches in sequence, etc. Complex logix become easily unmanegeable in this model and it is not easy to prioritize certain operations compared to other.
+RTOS An RTOS doesn&amp;rsquo;t normally provides all the features or OSes like Linux or Windows.</description>
+    </item>
+    
+    <item>
+      <title>2. Hardware kit</title>
+      <link>/advanced/2.hw-kit.html</link>
+      <pubDate>Thu, 05 Sep 2019 23:06:51 +0800</pubDate>
+      
+      <guid>/advanced/2.hw-kit.html</guid>
+      <description>Assemble the kit The sample kit is composed by a ESP32-DevKitC board and a daughter board with:
+ 4 buttons 5 RGB NeoPixels leds addressable over I2C (WS2812) a temperature / pressure /huimdity sensor luminosity sensor BME280 a luminosity sensor BH1730FVC  Insert the ESP32 board on the daughter board making sure the USB port is on the same side of the black connector on the daughter board.</description>
+    </item>
+    
+    <item>
+      <title>3. Your first Amazon FreeRTOS project</title>
+      <link>/advanced/3.install-tool-chain.html</link>
+      <pubDate>Thu, 05 Sep 2019 23:06:51 +0800</pubDate>
+      
+      <guid>/advanced/3.install-tool-chain.html</guid>
+      <description>Getting started If you want to experiment with Amazon FreeRTOS on your own you can check the documentation.
+For this lab, we are going to use a pre-configured example where we already have the code needed to interact with the peripherals on the daughter board.
+In this lab we are going to follow the instructions of this project https://github.com/EponaLab/afr-alexa-smarthome.
+Click on the link and follow the README.
+Stop at the step when you are asked to checkout the shadow-demo branch.</description>
+    </item>
+    
+    <item>
+      <title>4. Smart lamp</title>
+      <link>/advanced/4.afr-lamp.html</link>
+      <pubDate>Thu, 05 Sep 2019 23:06:51 +0800</pubDate>
+      
+      <guid>/advanced/4.afr-lamp.html</guid>
+      <description>Implement the lamp You should have now a working firmware that can make the ESP32 securely connect to AWS IoT Core, but it does not work as a connected lamp yet.
+You need to implement the logic that allows the interaction with the backend: listening to Device Shadow changes and report the current status of the device to the shadow.
+For simplicity the code has already been provided to you.</description>
+    </item>
+    
+    <item>
+      <title>5. Enable Alexa</title>
+      <link>/advanced/5.connecting.html</link>
+      <pubDate>Thu, 05 Sep 2019 23:06:51 +0800</pubDate>
+      
+      <guid>/advanced/5.connecting.html</guid>
+      <description>The firmware you have built and installed on the device is enabled to communicate with AWS IoT and the Device Shadow serice.
+How it works Check the file aws_publish_sensors_mqtt.c in ~/environment/esp/afr-alexa-smarthome/demos/espressif/esp32_devkitc_esp_wrover_kit/common/application_code.
+The prvDeltaCallback function is invoked every time the client receives a delta message from the Shadow Service. It then parses the message and publishes the result on an internal queue.
+static BaseType_t prvDeltaCallback( void * pvUserData, const char * const pcThingName, const char * const pcDeltaDocument, uint32_t ulDocumentLength, MQTTBufferHandle_t xBuffer ) { .</description>
+    </item>
+    
+  </channel>
+</rss>

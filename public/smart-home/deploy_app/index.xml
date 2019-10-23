@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1. Companion App on Alexa &amp; IoT Workshop</title>
+    <link>/smart-home/deploy_app.html</link>
+    <description>Recent content in 1. Companion App on Alexa &amp; IoT Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 05 Sep 2019 23:06:51 +0800</lastBuildDate>
+    
+	<atom:link href="/smart-home/deploy_app/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Deploy with Console</title>
+      <link>/smart-home/deploy_app/deploy_amplify_console.html</link>
+      <pubDate>Thu, 05 Sep 2019 23:06:51 +0800</pubDate>
+      
+      <guid>/smart-home/deploy_app/deploy_amplify_console.html</guid>
+      <description>Click on the button below.
+
+ This will open the AWs Amplify Console, and should look as below
+ Click Connect to GitHub. You&amp;rsquo;ll need a Github account for this step. The source code repo will be forked in your account
+ Click on the link Create a new service role. Just press the Next button to accept the defaults.
+ Click on the refresh button when done and select the role you just created (eg _amplifyconsole-backend-role).</description>
+    </item>
+    
+    <item>
+      <title>Deploy with CLI</title>
+      <link>/smart-home/deploy_app/deploy_amplify_cli.html</link>
+      <pubDate>Thu, 05 Sep 2019 23:06:51 +0800</pubDate>
+      
+      <guid>/smart-home/deploy_app/deploy_amplify_cli.html</guid>
+      <description>You should ONLY run this if you would like to develop locally.
+ In this application, Yarn and node.js are used to build the application.
+Prerequisites  Install node.js. The easiest way to install NodeJS is NVM. Install Yarn Install AWS Amplify CLI or npm i @aws-amplify/cli -g
+ Clone the Github repo on your local machine
+git clone https://github.com/massi-ang/aws-alexa-workshop-ui aws-alexa-workshop-ui cd aws-alexa-workshop-ui  Run amplify init to init the backend.</description>
+    </item>
+    
+  </channel>
+</rss>
