@@ -33,12 +33,8 @@ On Linux:
 From wherever you checkout repos:
 `git clone git@github.com:aws-samples/aws-alexa-workshop.git` (or your fork)
 
-#### Clone the theme submodule:
-
 ```shell script
 cd aws-alexa-workshop
-git submodule init
-git submodule update
 ```
 
 #### Run Hugo locally:

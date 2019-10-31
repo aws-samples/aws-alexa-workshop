@@ -13,7 +13,7 @@ relativeURLs = true
 
 [params]
   editURL = "https://github.com/aws-samples/aws-alexa-workshop/edit/master/content/"
-  themeVariant = "mine"
+  themeVariant = "aws"
   showVisitedLinks = false
   author = "Joe SHI"
   description = "AWS & Alexa Workshop"
