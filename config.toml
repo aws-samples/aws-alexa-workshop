@@ -12,20 +12,22 @@ relativeURLs = true
   hrefTargetBlank = true
 
 [params]
-editURL = "https://github.com/aws-samples/aws-alexa-workshop/edit/master/content/"
-themeVariant = "mine"
-showVisitedLinks = false
-author = "Joe SHI"
-description = "AWS & Alexa Workshop"
-disableSearch = false
-disableAssetsBusting = false
-disableShortcutsTitle = true
-branch = "master"
-pygmentsUseClasses = true
-pygmentsCodeFences = true
-pygmentsCodefencesGuessSyntax = true
-pygmentsStyle = "tango"
-
+  editURL = "https://github.com/aws-samples/aws-alexa-workshop/edit/master/content/"
+  themeVariant = "mine"
+  showVisitedLinks = false
+  author = "Joe SHI"
+  description = "AWS & Alexa Workshop"
+  disableSearch = false
+  disableAssetsBusting = false
+  disableShortcutsTitle = true
+  branch = "master"
+  pygmentsUseClasses = true
+  pygmentsCodeFences = true
+  pygmentsCodefencesGuessSyntax = true
+  pygmentsStyle = "tango"
+  uiRepo = "https://github.com/aws-samples/aws-alexa-workshop-smarthome-ui"
+  simulatorRepo = "https://github.com/aws-samples/aws-alexa-workshop-smarthome-lamp"
+  lambdaRepo = "https://github.com/aws-samples/aws-alexa-workshop-smarthome"
 
 [[menu.shortcuts]]
 name = "<i class='fab fa-github'></i> GitHub Project"

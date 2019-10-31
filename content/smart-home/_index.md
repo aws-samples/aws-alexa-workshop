@@ -17,16 +17,14 @@ open a new tab, please do remember to return to current page.
 {{% /notice %}}
     
 In this lab, you will learn how to build a virtual Alexa-Enabled
-Smart Lamp using various AWS Services.
-
-![](/images/smart-home/alexa-workshop-arch.jpg)
-
-The above is the overall architect of this Lab. In this lab, you will create:
+Smart Lamp using various AWS Services by creating:
 
 * A virtual Alexa-Enabled Smart Home Lamp
 * A device binding system using AppSync, Cognito User Pool, Lambda, DynamoDB
 * An Alexa backend which handles directives from Alexa and control the power status 
 of Lamp via IoT Core
+
+![](/images/smart-home/alexa-workshop-arch.jpg)
 
 ## Steps
 
