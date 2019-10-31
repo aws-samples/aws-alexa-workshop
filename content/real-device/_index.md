@@ -1,5 +1,5 @@
 ---
-title: "Lab3: A Real Device"
+title: "Lab 3: A Real Device"
 date: 2019-09-05T23:06:51+08:00
 draft: false
 chapter: true
