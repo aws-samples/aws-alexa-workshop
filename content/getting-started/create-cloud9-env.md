@@ -1,21 +1,25 @@
 ---
-title: "Create a Cloud9 Environment"
+title: "Setup AWS Cloud9"
 weight: 12
 chapter: false
 draft: false
 ---
 
 {{% notice info %}}
-This workshop is designed to run in the **N.Virginia (us-east-1)** region. Please don't
-run in any other region.
+This workshop is designed to run in the **N.Virginia (us-east-1)** region. Please don't run in any other region.
 {{% /notice %}}
 
 {{% notice warning %}}
-The Cloud9 workspace should be built by an IAM user with Administrator privileges,
-not the root account user. Please ensure you are logged in as an 
-**[IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) (account id + username + password)**, 
-not the root account (email + password).
+If you are running this workshop in **your own account** ensure to be logged in with an IAM user with Administrator privileges and
+not the root account user. Refer to  
+**[the documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html)** on how to create IAM users.
 {{% /notice %}}
+
+
+When logging in with an IAM user you'll have to provide an **account id** or **account alias** and then a username and  password.
+
+When logging in as **root** you use an email and a password.
+
 
 
 ## Launch Cloud9
@@ -35,7 +39,7 @@ and opening a new **terminal** tab in the main work area:
 1. Cloud9 manages IAM credentials dynamically so you don't have to configure any further credentials.
 
 
-## Trouble shooting
+## Troubleshooting
 {{% notice note %}}
 Ad blockers, javascript disablers, and tracking blockers should be disabled for
 the Cloud9 domain, or connecting to the workspace might be impacted.
