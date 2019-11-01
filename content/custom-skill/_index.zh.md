@@ -12,7 +12,7 @@ weight: 15
 ![](/images/ask/architecutre.png)
 
 {{% notice tip %}}
-此workshop的所有代码[点击此处获取](https://github.com/lab798/aws-alexa-workshop-ask/tree/master/workshop).
+此workshop的所有代码[点击此处获取](https://github.com/aws-samples/aws-alexa-workshop-ask).
 {{% /notice %}}
 
 ## Table of Contents

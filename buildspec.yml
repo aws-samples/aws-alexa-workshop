@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - npm install
+  build:
+    commands:
+      - hugo
+  post_build:
+    commands:
+      - aws s3 sync public/ s3://aws-alexa-workshop/ --delete
+      - aws cloudfront create-invalidation --distribution-id EPQGD99IJMFGD --paths "/*"

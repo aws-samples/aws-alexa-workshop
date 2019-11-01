@@ -1,10 +1,13 @@
 # AWS & Alexa Workshop
 
+![](https://codebuild.us-west-2.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiNTZ0eWJvSVB3blh2blVvcHRwMm00SXJkVkE5c2RHUnZRZjdDSnVBazhCSFV4WE5PZzNRbkRzcmd6VXAydDYxOWZYMXMrdWVHaEtTcEZoT2lVOEVNR0dnPSIsIml2UGFyYW1ldGVyU3BlYyI6ImRyRVRaazE1R3VwQlNpZW8iLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
+
 Welcome to AWS & Alexa Workshop!
 
 The goal of this workshop is learn how to build Alexa Skills using AWS Services. To
-access the workshop content, please visit [https://alexaworkshop.com](https://alexaworkshop.com).
+access the workshop content, please visit 
 
+[https://alexaworkshop.com](https://alexaworkshop.com)
 
 In this workshop, you will learn:
 1. How to build an [Alexa Custom Kill](https://developer.amazon.com/docs/custom-skills/understanding-custom-skills.html) 
