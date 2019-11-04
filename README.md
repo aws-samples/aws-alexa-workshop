@@ -1,6 +1,5 @@
 # AWS & Alexa Workshop
 
-test 
 ![](https://codebuild.us-west-2.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiNTZ0eWJvSVB3blh2blVvcHRwMm00SXJkVkE5c2RHUnZRZjdDSnVBazhCSFV4WE5PZzNRbkRzcmd6VXAydDYxOWZYMXMrdWVHaEtTcEZoT2lVOEVNR0dnPSIsIml2UGFyYW1ldGVyU3BlYyI6ImRyRVRaazE1R3VwQlNpZW8iLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
 
 Welcome to AWS & Alexa Workshop!
