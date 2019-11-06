@@ -4,7 +4,7 @@ date: 2019-09-05T23:06:51+08:00
 draft: false
 chapter: false
 hidden: false
-weight: 312
+weight: 33
 ---
 
 {{% notice warning %}}
@@ -32,7 +32,7 @@ cd aws-alexa-workshop-ui
 ![](/images/smart-home/amplify-push.png)
 1. 运行 `yarn install` 来安装依赖
 1. 运行 `yarn start` 来启动这个 web 应用程序
-1. Open [http://localhost:3000/device/xxxxx](http://localhost:3000/device/xxxxx) to view it in the browser.
+1. 打开链接 [http://localhost:3000/device/xxxxxx](http://localhost:3000/device/xxxxxx)，在浏览器中查看
 1. 如果您是第一次运行Web应用程序。 您应该单击**创建帐户**按钮来创建一个帐户。
 
 #### 发布 APP
