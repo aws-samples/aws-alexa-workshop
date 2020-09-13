@@ -1,7 +1,5 @@
 # AWS & Alexa Workshop
 
-![](https://codebuild.us-west-2.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiNTZ0eWJvSVB3blh2blVvcHRwMm00SXJkVkE5c2RHUnZRZjdDSnVBazhCSFV4WE5PZzNRbkRzcmd6VXAydDYxOWZYMXMrdWVHaEtTcEZoT2lVOEVNR0dnPSIsIml2UGFyYW1ldGVyU3BlYyI6ImRyRVRaazE1R3VwQlNpZW8iLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
-
 Welcome to AWS & Alexa Workshop!
 
 The goal of this workshop is learn how to build Alexa Skills using AWS Services. To
@@ -37,8 +35,7 @@ From wherever you checkout repos:
 
 ```shell script
 cd aws-alexa-workshop
-git submodule init
-git submodule update
+cd workshop
 ```
 
 #### Run Hugo locally:
@@ -47,9 +44,30 @@ or
 
 Run `hugo` will build your content locally and output to `./public/`
 
-## License Summary
 
-This sample code is made available under the MIT-0 license. See the LICENSE file.
+## Repo structure
 
+```bash
+.
+├── metadata.yml                      <-- Metadata file with descriptive information about the workshop
+├── README.md                         <-- This instructions file
+├── deck                              <-- Directory for presentation deck
+├── resources                         <-- Directory for workshop resources
+│   ├── code                          <-- Directory for workshop modules code
+│   ├── policies                      <-- Directory for workshop modules IAM Roles and Policies
+│   └── templates                     <-- Directory for workshop modules CloudFormation templates
+└── workshop                          
+    ├── buildspec.yml                 <-- AWS CodeBuild build script for building the workshop website (Note this is being deprecated in favour of automated builds within the workshops.aws platform. You shouldn\'t need to touch this file)
+    ├── config.toml                   <-- Hugo configuration file for the workshop website
+    └── content                       <-- Markdown files for pages/steps in workshop
+    └── static                        <-- Any static assets to be hosted alongside the workshop (ie. images, scripts, documents, etc)
+    └── themes                        <-- AWS Style Hugo Theme (Do not edit!)
+```
 
+## What's Included
 
+This project the following folders:
+
+* `deck`: **UNUSED RIGHT NOW** Future location to store your presentation materials. For now, you should store them centrally in a system like KnowledgeMine or Wisdom. 
+* `resources`:  **UNUSED RIGHT NOW** Store any example code, IAM policies, or Cloudformation templates needed by your workshop here.
+* `workshop`: This is the core workshop folder. This is generated as HTML and hosted for presentation for customers.
